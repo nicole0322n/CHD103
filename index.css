@@ -1,0 +1,368 @@
+.header {
+    width: 100%;
+    display: flex;
+    /* position: absolute; */
+    justify-content: center;
+    align-items: center;
+
+}
+
+.header .title {
+    font-size: 0;
+}
+
+.header .title a {
+    font-size: 15px;
+    line-height: 148px;
+    color: black;
+    text-decoration: none;
+    margin: 30px;
+}
+
+.header nav a:hover {
+    color: #C48710;
+}
+
+.header img {
+    vertical-align: top;
+}
+
+.header .sign {
+    margin: 0 8px;
+}
+
+.header .icon-opacity {
+    opacity: 0;
+}
+
+/* ----------------------------------------------- */
+
+.banner {
+    width: 1200px;
+    margin: auto;
+}
+
+.banner .pic {
+    /* margin: 128px 0 0; */
+    position: relative;
+}
+
+.banner img {
+    vertical-align: top;
+}
+
+.banner .btn {
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+
+}
+
+.banner .btn img {
+    height: 45px;
+}
+
+.banner .chang {
+    margin: 16px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.banner .chang i {
+    width: 8px;
+    border: 3px solid #eee;
+    margin: 0 3px;
+    border-radius: 10px;
+}
+
+.banner .chang i.active {
+    width: 20px;
+    border: 3px solid #C48710;
+}
+
+
+/* ----------------------------------------------- */
+
+.news {
+    width: 996px;
+    margin: 112px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.news h2 {
+    width: 203px;
+    height: 160px;
+    font-size: 28px;
+    border-right: 1px solid #9F9F9F;
+    display: flex;
+    align-items: center;
+}
+
+.news li {
+    list-style: none;
+    font-family: Jacques Francois, HanaMinA;
+}
+
+.news .btn {
+    font-size: 18px;
+    color: #fff;
+    background-color: #A07B67;
+    text-align: center;
+    display: inline-block;
+    padding: 8px 16px;
+    margin: 10px 22px 10px 113px;
+}
+
+.news a {
+    text-decoration: none;
+    color: black;
+}
+
+.news a:hover {
+    color: #C48710;
+    text-decoration: underline;
+}
+
+.news .more {
+    margin-top: auto;
+    margin-left: auto;
+    font-size: 15px;
+}
+
+.news .more:hover {
+    color: #C48710;
+    text-decoration: none;
+}
+
+/* ----------------------------------------------- */
+
+.about {
+    width: 100%;
+    background-color: #FBF7EF;
+    margin: 0 0 256px 0;
+}
+
+.about .warp {
+    width: 996px;
+    /* background-color: #FBF7EF; */
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.about .txt {
+    margin: 85px 0;
+}
+
+.about h2 {
+    font-size: 28px;
+    font-family: Jacques Francois;
+    padding: 0 0 64px;
+}
+
+.about p {
+    width: 406px;
+    font-size: 15px;
+    line-height: 1.5;
+    font-family: Jacques Francois, HanaMinA;
+    text-align: justify;
+    padding: 0 0 32px;
+}
+
+.about .more {
+    text-decoration: none;
+    color: black;
+}
+
+.about .pic {
+    position: absolute;
+    bottom: -36px;
+    right: 0;
+}
+
+.about .pic img {
+    vertical-align: bottom;
+    padding: 0 0 0 10px;
+}
+
+.about .deco {
+    position: absolute;
+    opacity: 0.4;
+    transform: rotate(-100deg);
+    right: 250px;
+    top: -50px;
+}
+
+.about .deco img {
+    width: 45px;
+}
+
+/* ----------------------------------------------- */
+
+.service {
+    width: 100%;
+    background-color: #FBF7EF;
+    margin: 0 0 272px 0;
+}
+
+.service .wrap {
+    width: 996px;
+    border: 2px solid transparent;
+    margin: auto;
+}
+
+.service .item {
+    margin: -96px 0;
+    justify-content: space-between;
+}
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.card:nth-of-type(2n) {
+    flex-direction: row-reverse;
+    text-align: right;
+}
+
+.card img {
+    vertical-align: top;
+}
+
+.card .txt {
+    margin: 0 20px;
+}
+
+.card h3 {
+    font-size: 28px;
+    margin: 0 0 32px 0;
+}
+
+.card p {
+    font-size: 15px;
+    line-height: 1.5;
+    font-family: Jacques Francois, HanaMinA;
+}
+
+/* ----------------------------------------------- */
+
+.product {
+    width: 100%;
+    /* border: 2px solid blue; */
+    /* width: 996px; */
+    margin: 0 auto 128px;
+}
+
+.product .title {
+    width: 90px;
+    transform: rotate(90deg);
+    /* transition: translate(50% 80%); */
+}
+
+.product h2 {
+    font-size: 28px;
+    position: relative;
+}
+
+.product h2::after {
+    content: "";
+    width: 150px;
+    border-bottom: 1px solid #000;
+    position: absolute;
+    margin: 14px;
+}
+
+.product .pic {
+    display: flex;
+    margin-left: 35%;
+    overflow: hidden;
+}
+
+.product img {
+    vertical-align: top;
+    width: 285px;
+    height: 383px;
+    object-fit: cover;
+    margin: 0 8px 0;
+}
+
+.product .pic img:first-of-type {
+    border-radius: 80px 0 0 0;
+}
+
+/* ----------------------------------------------- */
+
+.footer {
+    width: 100%;
+    background-color: #E3DBCD;
+}
+
+.footer .wrap {
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .item h3 {
+    font-size: 18px;
+    font-family: Jacques Francois, HanaMinA;
+    margin: 96px 0 64px 0;
+}
+
+.footer .item li {
+    font-size: 15px;
+    font-family: Jacques Francois, HanaMinA;
+    margin: 0 0 16px;
+}
+
+.footer .contact h3 {
+    font-size: 18px;
+    font-family: Jacques Francois, HanaMinA;
+    margin: 96px 0 32px 0;
+}
+
+.footer .map h3 {
+    font-size: 18px;
+    font-family: Jacques Francois, HanaMinA;
+    margin: 32px 0 32px 0;
+}
+
+.footer .items li {
+    font-size: 15px;
+    font-family: Jacques Francois, HanaMinA;
+    padding: 0 0 8px 0;
+}
+
+.footer .icon li {
+    padding-right: 8px;
+}
+
+.footer li a {
+    color: #000;
+    text-decoration: none;
+}
+
+.footer li a:hover {
+    color: #C48710;
+}
+
+.footer .icon {
+    display: flex;
+}
+
+.footer p {
+    text-align: center;
+    font-size: 8px;
+    padding: 30px;
+}
