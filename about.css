@@ -242,7 +242,7 @@
 }
 
 .shop .title {
-    width: 136px;
+    width: 80px;
     margin: 64px auto;
     display: flex;
     flex-wrap: wrap;
@@ -277,12 +277,6 @@
     margin: auto;
 }
 
-.shop .item {
-    font-family: Jacques Francois, HanaMinA;
-    /* width: 25%; */
-
-
-}
 
 .shop h4 {
     font-size: 28px;
@@ -293,9 +287,13 @@
     padding-bottom: 5px;
 }
 
+.shop .media {
+    margin-top: 25px;
+}
+
 .shop span {
     display: inline-block;
-    margin: 25px 5px 0 0;
+    padding-right: 5px;
 }
 
 .shop img {
