@@ -1,0 +1,284 @@
+p {
+    font-size: 15px;
+    line-height: 1.5;
+    font-family: Gowun Batang, 'Times New Roman', Times, HanaMinA, serif;
+    color: #333;
+}
+
+h2 {
+    font-size: 28px;
+    font-family: Jacques Francois, 'Times New Roman', Times, HanaMinA, serif;
+    color: #333;
+}
+
+h3 {
+    font-size: 21px;
+    font-family: Jacques Francois, 'Times New Roman', Times, HanaMinA, serif;
+    color: #333;
+}
+
+h4 {
+    font-size: 18px;
+    font-family: Jacques Francois, 'Times New Roman', Times, HanaMinA, serif;
+    color: #333;
+}
+
+li {
+    font-size: 15px;
+    line-height: 1.5;
+    font-family: Gowun Batang, 'Times New Roman', Times, HanaMinA, serif;
+    color: #333;
+}
+
+a {
+    font-size: 15px;
+    line-height: 1.5;
+    font-family: Gowun Batang, 'Times New Roman', Times, HanaMinA, serif;
+    color: #333;
+    text-decoration: none;
+}
+
+/* ----------------------------------------------- */
+
+.product .wrap {
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product .title {
+    width: 1200px;
+    text-align: center;
+    border-bottom: 1px solid #666;
+    margin: 30px 0 55px;
+    padding: 10px 0;
+}
+
+.product .card {
+    width: 996px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.product .pic {
+    width: 45%;
+}
+
+.product .pic img {
+    vertical-align: top;
+    width: 100%;
+}
+
+.product .item {
+    width: 45%;
+}
+
+.product .item img {
+    vertical-align: top;
+}
+
+.product .item h3 {
+    padding: 0 0 10px;
+    border-bottom: 1px solid #aaa;
+}
+
+.product .item .cost {
+    display: block;
+    margin: 25px 0 50px;
+}
+
+.product .item .detail {
+    margin: 0 0 15px;
+}
+
+.product .btn {
+    display: flex;
+    align-items: center;
+}
+
+.product .btn span {
+    margin: 15px 15px 25px 0;
+}
+
+.product .btn img {
+    vertical-align: middle;
+}
+
+.product .tag span {
+    font-size: 8px;
+    font-family: Gowun Batang, 'Times New Roman', Times, HanaMinA, serif;
+    color: #333;
+    background-color: #ddd;
+    display: inline-block;
+    padding: 4px 3px 3px;
+    border-radius: 3px;
+    margin-right: 5px;
+    margin-bottom: 55px;
+}
+
+.product .notice nav {
+    border-bottom: 1px solid #aaa;
+    padding: 5px 0;
+
+}
+
+.product .notice nav a {
+    padding: 10px 15px;
+    position: relative;
+}
+
+.product .notice .chang::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: #A07B67;
+    transform: scaleY(.7);
+    /* transition: .3s; */
+}
+
+
+.product .notice ul {
+    margin: 20px 15px;
+}
+
+.product .notice li {
+    padding: 8px 0;
+}
+
+.product .notice li::before {
+    content: '•';
+    padding-right: 5px;
+    color: #A07B67;
+}
+
+/* ----------------------------------------------- */
+.other {
+    width: 996px;
+    margin: auto;
+}
+
+.other .title {
+    width: 996px;
+    text-align: center;
+    border-bottom: 1px solid #aaa;
+    margin: 75px 0 55px;
+    padding: 10px 0;
+    position: relative;
+}
+
+.other .deco img {
+    width: 35px;
+    vertical-align: bottom;
+    position: absolute;
+    bottom: 0;
+    right: 70px;
+    transform: rotate(-15deg);
+}
+
+.other .pic {
+    width: 996px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.other .pic img {
+    vertical-align: top;
+    transform: scale(1);
+    transition: .3s;
+}
+
+.other .pic img:hover {
+    transform: scale(1.06);
+    transition: .3s;
+}
+
+/* --------------------------- */
+
+.other .page {
+    margin: 10px auto 55px;
+    width: 996px;
+}
+
+.other .item {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.front-page .line {
+    border: 1px solid #666;
+    width: 30px;
+    display: inline-block;
+    border-radius: 3px;
+    translate: -13px 0px;
+}
+
+.front-page .slash {
+    border: 1px solid #666;
+    width: 8px;
+    display: inline-block;
+    transform: rotate(135deg);
+    translate: -9px -1px;
+    transform-origin: bottom right;
+    border-radius: 3px;
+    transition: .3s;
+}
+
+
+.front-page:hover a {
+    border: 1px solid #C48710;
+    transition: .2s;
+}
+
+/* --------------------------- */
+
+.back-page .line {
+    border: 1px solid #666;
+    width: 30px;
+    display: inline-block;
+    border-radius: 3px;
+    translate: 13px 0px;
+}
+
+.back-page .slash {
+    border: 1px solid #666;
+    width: 8px;
+    display: inline-block;
+    transform: rotate(-135deg);
+    translate: 9px -1px;
+    transform-origin: bottom left;
+    border-radius: 3px;
+    transition: .3s;
+}
+
+
+.back-page:hover a {
+    border: 1px solid #C48710;
+    transition: .2s;
+}
+
+.other .chang {
+    display: flex;
+    margin: auto;
+}
+
+.other .chang i {
+    width: 8px;
+    border: 3px solid #eee;
+    margin: 0 3px;
+    border-radius: 10px;
+}
+
+.other .chang i.active {
+    width: 23px;
+    border: 3px solid #C48710;
+}

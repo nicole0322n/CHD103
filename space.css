@@ -1,0 +1,247 @@
+h2 {
+    font-size: 28px;
+    color: #333;
+    font-family: Jacques Francois, 'Times New Roman', Times, HanaMinA, serif;
+}
+
+p {
+    font-size: 15px;
+    line-height: 1.5;
+    font-family: HanaMinA;
+    color: #333;
+    font-style: normal;
+}
+
+h3 {
+    font-size: 21px;
+    color: #333;
+    font-family: HanaMinA;
+    margin-bottom: 20px;
+}
+
+
+h4 {
+    font-size: 15px;
+    color: #7F7F7F;
+    text-align: center;
+    font-family: 'Times New Roman', HanaMinA, Times, serif;
+}
+
+/* ----------------------------------------------- */
+
+.banner {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.banner img {
+    vertical-align: top;
+    margin: -25px 0 0;
+}
+
+/* ----------------------------------------------- */
+
+.process {
+    margin: 80px 0 128px;
+}
+
+.process img {
+    vertical-align: top;
+}
+
+.process .title {
+    width: 200px;
+    margin: 0 auto 55px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: 'Times New Roman', HanaMinA, Times, serif;
+}
+
+.process i {
+    width: 190px;
+    border: 1px solid #ccc;
+    margin: 9px 0 7px;
+
+}
+
+/* --------------------- */
+
+.process .wrap {
+    width: 996px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.process .card {
+    text-align: center;
+}
+
+.process .card img {
+    vertical-align: top;
+}
+
+.process .card span {
+    display: block;
+    margin-top: 20px;
+    font-size: 15px;
+    color: #333;
+    font-family: 'Times New Roman', HanaMinA, Times, serif;
+}
+
+.process .next img {
+    vertical-align: middle;
+}
+
+
+
+/* ----------------------------------------------- */
+
+.service img {
+    vertical-align: top;
+}
+
+.service .title {
+    width: 90px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: 'Times New Roman', HanaMinA, Times, serif;
+}
+
+.service i {
+    width: 90px;
+    border: 1px solid #ccc;
+    margin: 5px 0 9px;
+
+}
+
+/* --------------------- */
+
+.service .item .card:nth-child(2n) {
+    flex-direction: row-reverse;
+    text-align: right;
+}
+
+.service .item {
+    width: 966px;
+    margin: auto;
+}
+
+.service .card {
+    margin: 55px 0 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.service .card .pic {
+    width: 60%;
+    box-sizing: border-box;
+}
+
+.service .card .pic img {
+    width: 100%;
+    vertical-align: top;
+}
+
+.service .card .txt {
+    width: 37%;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+
+.service .deco-r {
+    position: absolute;
+    top: -80px;
+    left: -60px;
+}
+
+.service .deco-l {
+    position: absolute;
+    top: -80px;
+    right: -60px;
+}
+
+.service .fruit img {
+    width: 35px;
+    position: absolute;
+    top: -100px;
+    right: -60px;
+    transform: rotate(35deg);
+    vertical-align: top;
+}
+
+.service .leaf img {
+    width: 30px;
+    position: absolute;
+    top: -30px;
+    left: -60px;
+    vertical-align: top;
+    transform: rotate(145deg);
+}
+
+.service .tree img {
+    width: 35px;
+    position: absolute;
+    top: 30px;
+    right: 100px;
+    transform: rotate(-35deg);
+    vertical-align: top;
+}
+
+
+/* ----------------------------------------------- */
+
+.con {
+    width: 1200px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto 150px;
+}
+
+.bg {
+    width: 80px;
+    height: 80px;
+    border-radius: 999em;
+    background-color: #A07B67;
+    transition: .2s;
+
+}
+
+.con .txt {
+    display: block;
+    margin: -47px 0;
+    position: relative;
+
+}
+
+.con a {
+    text-decoration: none;
+    color: #eee;
+
+}
+
+.con a:hover .bg {
+    background-color: #D8A43F;
+    transition: .2s;
+}
+
+.leaf-r {
+    position: absolute;
+    bottom: -45px;
+    right: -30px;
+    transform: rotate(45deg);
+}
+
+.leaf-r img {
+    vertical-align: top;
+    width: 25px;
+}

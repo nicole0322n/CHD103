@@ -1,0 +1,118 @@
+.header {
+    width: 100%;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    padding-left: 50px;
+    box-sizing: border-box;
+}
+
+.header .title {
+    font-size: 0;
+}
+
+.header .title a {
+    font-size: 15px;
+    line-height: 148px;
+    color: #333;
+    text-decoration: none;
+    margin: 30px;
+    font-family: Jacques Francois, HanaMinA;
+    transition: .2s;
+}
+
+.header nav a:hover {
+    color: #C48710;
+    transition: .2s;
+}
+
+.header img {
+    vertical-align: top;
+}
+
+.header .sign {
+    margin: 0 8px;
+}
+
+.header .icon-opacity {
+    opacity: 0;
+}
+
+/* ----------------------------------------------- */
+
+.footer {
+    width: 100%;
+    background-color: #E3DBCD;
+}
+
+.footer .wrap {
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .item h3 {
+    font-size: 18px;
+    font-family: Jacques Francois, HanaMinA;
+    color: #333;
+    margin: 96px 0 64px 0;
+}
+
+.footer .item li {
+    font-size: 15px;
+    font-family: Jacques Francois, HanaMinA;
+    color: #333;
+    margin: 0 0 16px;
+}
+
+.footer .contact h3 {
+    font-size: 18px;
+    font-family: Jacques Francois, HanaMinA;
+    margin: 96px 0 32px 0;
+    color: #333;
+}
+
+.footer .map h3 {
+    font-size: 18px;
+    font-family: Jacques Francois, HanaMinA;
+    margin: 32px 0 32px 0;
+    color: #333;
+}
+
+.footer .items li {
+    font-size: 15px;
+    font-family: Jacques Francois, HanaMinA;
+    color: #333;
+    padding: 0 0 8px 0;
+}
+
+.footer .icon {
+    display: flex;
+}
+
+.footer .icon span {
+    padding-right: 8px;
+}
+
+.footer li a {
+    color: #333;
+    text-decoration: none;
+    transition: .2s;
+}
+
+.footer li a:hover {
+    color: #C48710;
+    transition: .2s;
+}
+
+
+
+.footer p {
+    text-align: center;
+    font-size: 8px;
+    color: #333;
+    padding: 30px;
+}

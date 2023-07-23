@@ -1,0 +1,106 @@
+h2 {
+    font-size: 28px;
+    color: #333;
+    font-family: Jacques Francois, 'Times New Roman', Times, HanaMinA, serif;
+}
+
+p {
+    font-size: 15px;
+    line-height: 1.5;
+    font-family: HanaMinA;
+    color: #333;
+    font-style: normal;
+}
+
+h3 {
+    font-size: 21px;
+    color: #333;
+    font-family: HanaMinA;
+    margin-bottom: 20px;
+}
+
+
+h4 {
+    font-size: 15px;
+    color: #7F7F7F;
+    text-align: center;
+    font-family: 'Times New Roman', HanaMinA, Times, serif;
+}
+
+/* ----------------------------------------------- */
+
+.banner {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.banner img {
+    vertical-align: top;
+    margin: -25px 0 0;
+}
+
+/* ----------------------------------------------- */
+.course .wrap {
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.course .title {
+    width: 1200px;
+    text-align: center;
+    margin: 75px 0 5px;
+    padding: 10px 0;
+}
+
+.course .card {
+    width: 370px;
+    margin: 35px 15px;
+    position: relative;
+}
+
+.course img {
+    vertical-align: top;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.course h3 {
+    padding: 10px 0;
+    border-bottom: 1px solid #666;
+}
+
+.course .card .tag {
+    background-color: #A07B67;
+    position: absolute;
+    top: 10px;
+    left: -10px;
+    padding: 8px 12px;
+    box-shadow: 0px 0px 4px #666;
+    color: #eee;
+}
+
+.course .date {
+    padding: 5px 0;
+    font-size: 13px;
+    font-family: Gowun Batang, 'Times New Roman', Times, HanaMinA, serif;
+    color: #aaa;
+}
+
+.course a {
+    text-decoration: none;
+    color: #333;
+    font-size: 21px;
+    line-height: 1.5;
+    transition: .3s;
+    font-family: Gowun Batang, 'Times New Roman', Times, HanaMinA, serif;
+}
+
+.course a:hover {
+    color: #C48710;
+    transition: .2s;
+}
+
+/* ----------------------------------------------- */

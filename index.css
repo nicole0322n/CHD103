@@ -1,38 +1,20 @@
-.header {
-    width: 100%;
-    display: flex;
-    /* position: absolute; */
-    justify-content: center;
-    align-items: center;
-
+h2 {
+    color: #333;
+    font-size: 28px;
+    font-family: Jacques Francois, 'Times New Roman', Times, HanaMinA, serif;
 }
 
-.header .title {
-    font-size: 0;
-}
-
-.header .title a {
+p {
+    color: #333;
     font-size: 15px;
-    line-height: 148px;
-    color: black;
-    text-decoration: none;
-    margin: 30px;
+    font-family: Jacques Francois, 'Times New Roman', Times, HanaMinA, serif;
+    line-height: 1.5;
 }
 
-.header nav a:hover {
-    color: #C48710;
-}
-
-.header img {
-    vertical-align: top;
-}
-
-.header .sign {
-    margin: 0 8px;
-}
-
-.header .icon-opacity {
-    opacity: 0;
+h3 {
+    color: #333;
+    font-size: 25px;
+    font-family: Jacques Francois, 'Times New Roman', Times, HanaMinA, serif;
 }
 
 /* ----------------------------------------------- */
@@ -43,7 +25,7 @@
 }
 
 .banner .pic {
-    /* margin: 128px 0 0; */
+    margin: -25px 0 0;
     position: relative;
 }
 
@@ -59,7 +41,6 @@
     width: 100%;
     height: 100%;
     align-items: center;
-
 }
 
 .banner .btn img {
@@ -80,7 +61,7 @@
 }
 
 .banner .chang i.active {
-    width: 20px;
+    width: 23px;
     border: 3px solid #C48710;
 }
 
@@ -88,7 +69,7 @@
 /* ----------------------------------------------- */
 
 .news {
-    width: 996px;
+    width: 1200px;
     margin: 112px auto;
     display: flex;
     flex-wrap: wrap;
@@ -97,17 +78,18 @@
 }
 
 .news h2 {
-    width: 203px;
-    height: 160px;
-    font-size: 28px;
-    border-right: 1px solid #9F9F9F;
-    display: flex;
-    align-items: center;
+    width: 30%;
+    margin: 0 133px;
+}
+
+.news .item {
+    width: 70%;
+    border-left: 1px solid #9F9F9F;
 }
 
 .news li {
     list-style: none;
-    font-family: Jacques Francois, HanaMinA;
+    font-family: 'Times New Roman', Times, HanaMinA, serif;
 }
 
 .news .btn {
@@ -117,29 +99,43 @@
     text-align: center;
     display: inline-block;
     padding: 8px 16px;
-    margin: 10px 22px 10px 113px;
+    margin: 10px 22px 10px 133px;
 }
 
 .news a {
     text-decoration: none;
-    color: black;
+    color: #333;
+    transition: .3s;
 }
 
 .news a:hover {
     color: #C48710;
-    text-decoration: underline;
+    transition: .2s;
+}
+
+
+.news .page {
+    width: 90px;
+    margin-left: auto;
 }
 
 .news .more {
-    margin-top: auto;
-    margin-left: auto;
     font-size: 15px;
+    padding: 0 3px;
+    font-family: Jacques Francois, 'Times New Roman', Times, HanaMinA, serif;
 }
 
-.news .more:hover {
+.news .page:hover a {
     color: #C48710;
-    text-decoration: none;
+    transition: .3s;
 }
+
+.news .page:hover .back-page a {
+    transition: .2s;
+    border: 1px solid #C48710;
+}
+
+
 
 /* ----------------------------------------------- */
 
@@ -151,7 +147,6 @@
 
 .about .warp {
     width: 996px;
-    /* background-color: #FBF7EF; */
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -163,24 +158,15 @@
 }
 
 .about h2 {
-    font-size: 28px;
-    font-family: Jacques Francois;
     padding: 0 0 64px;
 }
 
 .about p {
     width: 406px;
-    font-size: 15px;
-    line-height: 1.5;
-    font-family: Jacques Francois, HanaMinA;
     text-align: justify;
     padding: 0 0 32px;
 }
 
-.about .more {
-    text-decoration: none;
-    color: black;
-}
 
 .about .pic {
     position: absolute;
@@ -198,12 +184,64 @@
     opacity: 0.4;
     transform: rotate(-100deg);
     right: 250px;
-    top: -50px;
+    top: -60px;
 }
 
 .about .deco img {
-    width: 45px;
+    width: 60px;
 }
+
+.about .page {
+    width: 85px
+}
+
+.about .more {
+    font-size: 15px;
+    margin-right: 2px;
+    font-family: Jacques Francois, 'Times New Roman', Times, HanaMinA, serif;
+}
+
+.about .page a {
+    text-decoration: none;
+    color: #333;
+    transition: .3s;
+}
+
+.about .page:hover a {
+    color: #C48710;
+    transition: .2s;
+}
+
+.about .page:hover .back-page a {
+    border: 1px solid #C48710;
+    transition: .2s;
+}
+
+
+/* --------------------------- */
+
+.back-page .line {
+    border: 1px solid #333;
+    width: 35px;
+    display: inline-block;
+    border-radius: 3px;
+}
+
+.back-page .slash {
+    border: 1px solid #333;
+    width: 5px;
+    display: inline-block;
+    transform: rotate(-135deg);
+    translate: 0 -1.5px;
+    transform-origin: bottom left;
+    border-radius: 3px;
+}
+
+.back-page {
+    display: inline-flex;
+    justify-content: end;
+}
+
 
 /* ----------------------------------------------- */
 
@@ -228,6 +266,7 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    position: relative;
 }
 
 .card:nth-of-type(2n) {
@@ -244,40 +283,63 @@
 }
 
 .card h3 {
-    font-size: 28px;
     margin: 0 0 32px 0;
 }
 
-.card p {
-    font-size: 15px;
-    line-height: 1.5;
-    font-family: Jacques Francois, HanaMinA;
+.card .deco-tree {
+    position: absolute;
+    width: 60px;
+    bottom: -150px;
+    left: -50px;
+    transform: rotate(-25deg);
+    opacity: 0.4;
+}
+
+.card .deco-leaf {
+    position: absolute;
+    top: -250px;
+    right: 30px;
+}
+
+.card .deco-dot {
+    position: absolute;
+    /* border: 1px solid red; */
+    bottom: -60px;
+    right: -60px;
+}
+
+.card .deco {
+    position: absolute;
+    bottom: -60px;
+    left: -60px;
 }
 
 /* ----------------------------------------------- */
 
 .product {
     width: 100%;
-    /* border: 2px solid blue; */
-    /* width: 996px; */
     margin: 0 auto 128px;
+    display: flex;
+    flex-wrap: wrap;
+
 }
 
 .product .title {
-    width: 90px;
-    transform: rotate(90deg);
-    /* transition: translate(50% 80%); */
+    width: 996px;
+    margin: auto;
 }
 
 .product h2 {
-    font-size: 28px;
     position: relative;
+    transform: rotate(90deg);
+    transform-origin: top left;
+    translate: 28px 28px;
 }
 
 .product h2::after {
     content: "";
     width: 150px;
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid #333;
     position: absolute;
     margin: 14px;
 }
@@ -288,81 +350,33 @@
     overflow: hidden;
 }
 
+
 .product img {
     vertical-align: top;
     width: 285px;
-    height: 383px;
+    height: 390px;
     object-fit: cover;
     margin: 0 8px 0;
 }
 
-.product .pic img:first-of-type {
+.product .pic a:nth-of-type(1) img {
     border-radius: 80px 0 0 0;
 }
 
-/* ----------------------------------------------- */
-
-.footer {
-    width: 100%;
-    background-color: #E3DBCD;
-}
-
-.footer .wrap {
-    width: 1200px;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-}
-
-.footer .item h3 {
-    font-size: 18px;
-    font-family: Jacques Francois, HanaMinA;
-    margin: 96px 0 64px 0;
-}
-
-.footer .item li {
-    font-size: 15px;
-    font-family: Jacques Francois, HanaMinA;
-    margin: 0 0 16px;
-}
-
-.footer .contact h3 {
-    font-size: 18px;
-    font-family: Jacques Francois, HanaMinA;
-    margin: 96px 0 32px 0;
-}
-
-.footer .map h3 {
-    font-size: 18px;
-    font-family: Jacques Francois, HanaMinA;
-    margin: 32px 0 32px 0;
-}
-
-.footer .items li {
-    font-size: 15px;
-    font-family: Jacques Francois, HanaMinA;
-    padding: 0 0 8px 0;
-}
-
-.footer .icon li {
-    padding-right: 8px;
-}
-
-.footer li a {
-    color: #000;
-    text-decoration: none;
-}
-
-.footer li a:hover {
-    color: #C48710;
-}
-
-.footer .icon {
+.product .chang {
+    margin-left: 35.5%;
+    margin-top: 10px;
     display: flex;
 }
 
-.footer p {
-    text-align: center;
-    font-size: 8px;
-    padding: 30px;
+.product .chang i {
+    width: 8px;
+    border: 3px solid #eee;
+    margin: 0 3px;
+    border-radius: 10px;
+}
+
+.product .chang i.active {
+    width: 23px;
+    border: 3px solid #C48710;
 }

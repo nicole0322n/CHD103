@@ -1,0 +1,289 @@
+p {
+    font-size: 15px;
+    line-height: 1.5;
+    font-family: HanaMinA;
+    color: #333
+}
+
+h2 {
+    font-size: 28px;
+    font-family: Jacques Francois, HanaMinA;
+    color: #333
+}
+
+.main-menu li>a {
+    font-size: 15px;
+    line-height: 1.5;
+    font-family: HanaMinA;
+    color: #333
+}
+
+.main-menu .color>a {
+    font-size: 15px;
+    line-height: 1.5;
+    font-family: HanaMinA;
+    color: #333
+}
+
+/* ----------------------------------------------- */
+
+.product {
+    width: 100%;
+}
+
+.product .wrap {
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product .title {
+    width: 1200px;
+    text-align: center;
+    border-bottom: 1px solid #666;
+    margin: 30px 0 35px;
+    padding: 10px 0;
+}
+
+/* ----------------------------------------------- */
+
+.product nav {
+    width: 960px;
+    margin: auto;
+    z-index: 1;
+}
+
+.main-menu {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 27px;
+}
+
+.main-menu>li {
+    padding: 0 35px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.main-menu>li>a {
+    display: block;
+    padding: 5px 0px 0px;
+    text-decoration: none;
+    transition: .3s;
+    color: #333;
+}
+
+.main-menu .sub-menu {
+    display: none;
+    padding-top: 10px;
+    position: absolute;
+    flex-wrap: wrap;
+    justify-content: center;
+    top: 28px;
+}
+
+.main-menu .sub-menu img {
+    vertical-align: top;
+    display: inline-block;
+
+}
+
+.main-menu .sub-menu a {
+    display: inline-block;
+    padding: 6px;
+    text-decoration: none;
+    transition: .3s;
+    color: #333;
+}
+
+.main-menu .sub-menu .color {
+    display: flex;
+    align-items: center;
+}
+
+.main-menu>li:hover .sub-menu {
+    background-color: #eee9;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100px;
+}
+
+.main-menu>li>a:hover {
+    transition: .2s;
+    color: #C48710;
+}
+
+.sub-menu a:hover {
+    transition: .2s;
+    color: #C48710;
+}
+
+/* ----------------------------------------------- */
+.product .item {
+    width: 996px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.product .card {
+    width: 285px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.product .pic {
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.product .pic img {
+    width: 100%;
+    vertical-align: top;
+    transform: scale(1);
+    transition: .7s;
+}
+
+.product .pic img:hover {
+    transition: .7s;
+    transform: scale(1.1);
+}
+
+.product .name {
+    font-size: 15px;
+    line-height: 1.5;
+    font-family: HanaMinA;
+    color: #333;
+}
+
+.product .name a {
+    text-decoration: none;
+    color: #333;
+    transition: .3s;
+}
+
+.product span {
+    display: block;
+    margin-bottom: 50px;
+}
+
+.product .buy {
+    position: relative;
+    display: inline-block;
+
+}
+
+.product .buy img {
+    vertical-align: top;
+    position: absolute;
+    right: 0;
+    transition: .3s;
+}
+
+.product .name a:hover {
+    color: #C48710;
+    transition: .2s;
+}
+
+
+.product .buy img:nth-child(1):hover {
+    transition: .2s;
+    opacity: 0;
+}
+
+/* ----------------------------------------------- */
+
+.page {
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.page .item {
+    margin: 65px 0 45px;
+}
+
+.page a {
+    text-decoration: none;
+    padding: 0 3px;
+    color: #333;
+    transition: .3s;
+}
+
+.page a:hover {
+    color: #C48710;
+    border-bottom: 1px solid #C48710;
+    transition: .2s;
+}
+
+/* --------------------------- */
+
+.front-page .line {
+    border: 1px solid #333;
+    width: 25px;
+    display: inline-block;
+    border-radius: 3px;
+}
+
+.front-page .slash {
+    border: 1px solid #333;
+    width: 1px;
+    display: inline-block;
+    transform: rotate(135deg);
+    translate: 0 -1.5px;
+    transform-origin: bottom right;
+    border-radius: 3px;
+    transition: .3s;
+}
+
+.front-page {
+    display: inline-flex;
+    justify-content: end;
+    padding: 7px 0 0 0;
+    margin: 0 10px;
+}
+
+.front-page:hover a {
+    border: 1px solid #C48710;
+    transition: .2s;
+}
+
+/* --------------------------- */
+
+.back-page .line {
+    border: 1px solid #333;
+    width: 25px;
+    display: inline-block;
+    border-radius: 3px;
+}
+
+.back-page .slash {
+    border: 1px solid #333;
+    width: 1px;
+    display: inline-block;
+    transform: rotate(-135deg);
+    translate: 0 -1.5px;
+    transform-origin: bottom left;
+    border-radius: 3px;
+    transition: .3s;
+}
+
+.back-page {
+    display: inline-flex;
+    justify-content: end;
+    padding: 7px 0 0 0;
+    margin: 0 10px;
+}
+
+.back-page:hover a {
+    border: 1px solid #C48710;
+    transition: .2s;
+}
