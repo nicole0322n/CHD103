@@ -1,0 +1,208 @@
+label {
+    font-size: 15px;
+    line-height: 1.5;
+    font-family: Gowun Batang, 'Times New Roman', Times, HanaMinA, serif;
+    color: #333;
+}
+
+h2 {
+    font-size: 28px;
+    font-family: Jacques Francois, 'Times New Roman', Times, HanaMinA, serif;
+    color: #333;
+}
+
+h3 {
+    font-size: 21px;
+    font-family: Jacques Francois, 'Times New Roman', Times, HanaMinA, serif;
+    color: #333;
+}
+
+h4 {
+    font-size: 18px;
+    font-family: Jacques Francois, 'Times New Roman', Times, HanaMinA, serif;
+    color: #333;
+}
+
+a {
+    font-size: 15px;
+    line-height: 1.5;
+    font-family: Gowun Batang, 'Times New Roman', Times, HanaMinA, serif;
+    color: #333;
+    text-decoration: none;
+}
+
+span {
+    font-size: 15px;
+    line-height: 1.5;
+    font-family: Gowun Batang, 'Times New Roman', Times, HanaMinA, serif;
+    color: #333;
+    text-decoration: none;
+}
+
+/* ----------------------------------------------- */
+
+.login {
+    margin-bottom: 70px;
+}
+
+.login .wrap {
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.login .title {
+    width: 1200px;
+    text-align: center;
+    border-bottom: 1px solid #666;
+    margin: 30px 0 55px;
+    padding: 10px 0;
+}
+
+.login .card {
+    /* border: 1px solid red; */
+    width: 996px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.login .pic {
+    /* border: 1px solid blue; */
+    width: 40%;
+}
+
+.login .pic img {
+    vertical-align: top;
+    width: 100%;
+}
+
+.login .item {
+    /* border: 1px solid blue; */
+    width: 30%;
+    margin: auto 90px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.login .form {
+    margin: 10px;
+
+}
+
+.login .info label {
+    margin-bottom: 5px;
+    display: block;
+}
+
+.login .info input {
+    margin-bottom: 25px;
+    width: 294px;
+    height: 25px;
+    border: 0px;
+    background-color: #eee;
+    border-radius: 3px;
+}
+
+.login .eye {
+    position: absolute;
+    top: 114px;
+    right: 10px;
+}
+
+.login .forget {
+    display: flex;
+    justify-content: end;
+    margin-top: -10px;
+}
+
+.login .forget a {
+    font-size: 13px;
+    color: #aaa;
+    transition: .2s;
+}
+
+.login .forget a:hover {
+    color: #333;
+    transition: .2s;
+}
+
+.login .updata input {
+    width: 70px;
+    height: 30px;
+    color: #eee;
+    font-size: 15px;
+    background-color: #A07B67;
+    border: 0px;
+    margin: 15px 0;
+    transition: .2s;
+}
+
+.login .updata input:hover {
+    background-color: #C48710;
+    transition: .2s;
+}
+
+.login .or {
+    display: inline-block;
+    margin: 25px auto 10px;
+
+}
+
+.login .or:before {
+    content: '';
+    border: 1px solid #ccc;
+    display: inline-block;
+    width: 130px;
+    margin: 3px 10px 3px 0;
+}
+
+.login .or::after {
+    content: '';
+    border: 1px solid #ccc;
+    display: inline-block;
+    width: 130px;
+    margin: 3px 0 3px 10px;
+}
+
+.login .media {
+    margin: 10px auto 75px;
+}
+
+.login .media img {
+    vertical-align: top;
+    padding: 0 18px;
+}
+
+
+.login .signup span {
+    padding-right: 10px;
+}
+
+.login .signup a {
+    border-bottom: 1px solid #666;
+    padding: 3px 0;
+    transition: .2s;
+}
+
+.login .signup a:hover {
+    color: #C48710;
+    border-bottom: 1px solid #C48710;
+    transition: .2s;
+}
+
+.login .signup {
+    position: relative;
+}
+
+.login .signup .fruit img {
+    position: absolute;
+    top: 0px;
+    right: -40px;
+    width: 25px;
+    transform: rotate(30deg);
+}

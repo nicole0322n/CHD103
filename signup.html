@@ -7,13 +7,13 @@
     <title>Document</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="header and footer.css">
-    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="signup.css">
 </head>
 
 <body>
     <div class="header">
         <nav class="title">
-            <a href="about.html">關於我們</a>
+            <a href="#">關於我們</a>
             <a href="#">最新消息</a>
             <a href="#">產品列表</a>
             <a class="logo" href="#"><img src="img/share/logo.svg" alt="logo"></a>
@@ -21,66 +21,57 @@
             <a href="#">空間佈置</a>
             <a href="#">聯絡我們</a>
         </nav>
-        <nav>
-            <a class="sign" href="#"><img src="img/share/會員登入.png" alt=""></a>
-            <a href="#"><img src="img/share/購物車.png" alt=""></a>
+        <nav class="icon">
+            <a class="sign" href="#"><img src="img/share/會員登入.png" alt="會員登入"></a>
+            <a class="buy" href="#"><img src="img/share/購物車.png" alt="購物車"></a>
         </nav>
     </div>
 
     <!-- ----------------------------------------------------------------- -->
-
-    <div class="banner">
-        <img src="img/share/contact.jpg" alt="">
-    </div>
-
-    <!-- ----------------------------------------------------------------- -->
-
-    <article class="data">
-        <div class="title">
-            <h2>Contact</h2>
-            <i></i>
-            <h3>聯絡我們</h3>
-        </div>
+    <article class="login">
         <div class="wrap">
-            <p>請完成以下表格並送出，Preserve團隊將會盡快與您聯繫，謝謝。</p>
-            <form class="info" action="">
-                <div><label for="">姓名</label>
-                    <input type="user_name">
+            <div class="title">
+                <h2>會員登入</h2>
+            </div>
+            <div class="card">
+                <div class="pic">
+                    <img src="img/signup/登入.jpg" alt="">
                 </div>
-                <div><label for="">電話</label>
-                    <input type="tel">
-                </div>
-                <div><label for="">信箱</label>
-                    <input type="email">
-                </div>
-                <div><label for="">類別</label>
-                    <select name="" id="">
-                        <option value="">請選擇</option>
-                        <option value="">場地佈置諮詢</option>
-                        <option value="">合作邀約</option>
-                        <option value="">定期維護</option>
-                        <option value="">其他</option>
-                    </select>
-                </div>
-
-                <div><label for="">內容</label></div>
-                <div>
-                    <textarea class="msg" name="" id="" cols="30" rows="10"></textarea>
-                </div>
-                <div class="deco">
-                    <div class="fruit">
-                        <img src="img/share/fruit.png" alt="">
+                <div class="item">
+                    <form class="info" action="">
+                        <div>
+                            <label for="">帳號</label>
+                            <input type="text">
+                        </div>
+                        <div>
+                            <label for="">密碼</label>
+                            <input type="password">
+                        </div>
+                        <div class="eye">
+                            <img src="img/signup/eye.png" alt="">
+                        </div>
+                        <div class="forget">
+                            <a href="#">忘記密碼</a>
+                        </div>
+                    </form>
+                    <form class="updata" action="">
+                        <input type="submit" value="登入">
+                    </form>
+                    <div class="or">or</div>
+                    <div class="media">
+                        <a href="#"><img src="img/signup/line.png" alt=""></a>
+                        <a href="#"><img src="img/signup/fb.png" alt=""></a>
+                        <a href="#"><img src="img/signup/goole.png" alt=""></a>
                     </div>
-                    <div class="leaf">
-                        <img src="img/share/leaf.png" alt="">
+                    <div class="signup">
+                        <span>還沒有會員嗎?</span>
+                        <a href="#">註冊會員</a>
+                        <div class="fruit">
+                            <img src="img/share/fruit.png" alt="">
+                        </div>
                     </div>
                 </div>
-            </form>
-            <form class="updata" action="">
-                <div>
-                    <input id="" type="submit" value="送出" name="">
-                </div>
-            </form>
+            </div>
         </div>
     </article>
     <!-- ----------------------------------------------------------------- -->
@@ -141,6 +132,9 @@
             </div>
         </div>
         <p>本網站為緯育TibaMe【CHD10323】前端工程師專業技術養成班學員作品,僅供學習、展示之用途。</p>
+
+    </div>
+
 </body>
 
 </html>
