@@ -54,9 +54,9 @@ h3 {
 
 .deco .leaf img {
     position: absolute;
-    top: 30px;
+    top: 150px;
     left: 250px;
-    transform: rotate(-145deg);
+    transform: scaleX(-1);
     vertical-align: top;
     width: 30px;
 }

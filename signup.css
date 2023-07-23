@@ -72,6 +72,15 @@ span {
 .login .pic {
     /* border: 1px solid blue; */
     width: 40%;
+    position: relative;
+}
+
+.login .pic .leaf img {
+    position: absolute;
+    bottom: 150px;
+    left: -48px;
+    width: 40px;
+    transform: rotate(-20deg);
 }
 
 .login .pic img {
