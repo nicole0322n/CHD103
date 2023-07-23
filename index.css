@@ -45,6 +45,7 @@ h3 {
 
 .banner .btn img {
     height: 45px;
+    padding: 0 10px;
 }
 
 .banner .chang {
@@ -179,16 +180,13 @@ h3 {
     padding: 0 0 0 10px;
 }
 
-.about .deco {
+.about .deco img {
+    width: 50px;
     position: absolute;
     opacity: 0.4;
     transform: rotate(-100deg);
     right: 250px;
-    top: -60px;
-}
-
-.about .deco img {
-    width: 60px;
+    top: -50px;
 }
 
 .about .page {
@@ -288,7 +286,7 @@ h3 {
 
 .card .deco-tree {
     position: absolute;
-    width: 60px;
+    width: 50px;
     bottom: -150px;
     left: -50px;
     transform: rotate(-25deg);
@@ -299,6 +297,8 @@ h3 {
     position: absolute;
     top: -250px;
     right: 30px;
+    width: 50px;
+    opacity: 0.5;
 }
 
 .card .deco-dot {
