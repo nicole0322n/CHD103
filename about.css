@@ -289,10 +289,10 @@
 
 .shop .media {
     margin-top: 25px;
+    display: flex;
 }
 
 .shop span {
-    display: inline-block;
     padding-right: 5px;
 }
 

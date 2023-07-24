@@ -110,6 +110,10 @@ h3 {
     border-radius: 5px;
 }
 
+.info input:focus {
+    outline: none;
+}
+
 select {
     margin-bottom: 21px;
     width: 253px;
@@ -121,6 +125,14 @@ select {
     color: #666;
 }
 
+select:focus {
+    outline: none;
+}
+
+textarea:focus {
+    outline: none;
+}
+
 .msg {
     width: 328px;
     height: 130px;
@@ -128,6 +140,7 @@ select {
     border: 0px;
     border-radius: 5px;
     margin: 10px 20px 0;
+    resize: none;
 }
 
 .updata {
