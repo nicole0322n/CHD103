@@ -153,6 +153,7 @@ span {
     border: 0px;
     margin: 15px 0;
     transition: .2s;
+    font-family: Jacques Francois, 'Times New Roman', Times, HanaMinA, serif;
 }
 
 .login .updata input:hover {

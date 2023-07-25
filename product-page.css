@@ -107,22 +107,26 @@ a {
     vertical-align: middle;
 }
 
+.product .tag {
+    font-size: 0px;
+}
+
 .product .tag span {
-    font-size: 8px;
+    font-size: 12px;
     font-family: Gowun Batang, 'Times New Roman', Times, HanaMinA, serif;
     color: #333;
     background-color: #ddd;
     display: inline-block;
     padding: 4px 3px 3px;
     border-radius: 3px;
-    margin-right: 5px;
+    margin-right: 10px;
     margin-bottom: 55px;
 }
 
 .product .notice nav {
     border-bottom: 1px solid #aaa;
     padding: 5px 0;
-
+    font-size: 0px;
 }
 
 .product .notice nav a {

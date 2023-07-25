@@ -1,20 +1,30 @@
+@font-face {
+    font-family: NotoSerifCJKtc-Regular;
+    src: url(font/NotoSerifCJKtc-Regular.otf);
+}
+
+@font-face {
+    font-family: Jacques Francois;
+    src: url(font/JacquesFrancois-Regular.ttf);
+}
+
 h2 {
     color: #333;
     font-size: 28px;
-    font-family: Jacques Francois, 'Times New Roman', Times, HanaMinA, serif;
+    font-family: Jacques Francois, 'Times New Roman', Times, NotoSerifCJKtc-Regular, serif;
 }
 
 p {
     color: #333;
     font-size: 15px;
-    font-family: Jacques Francois, 'Times New Roman', Times, HanaMinA, serif;
+    font-family: Jacques Francois, 'Times New Roman', Times, NotoSerifCJKtc-Regular, serif;
     line-height: 1.5;
 }
 
 h3 {
     color: #333;
     font-size: 25px;
-    font-family: Jacques Francois, 'Times New Roman', Times, HanaMinA, serif;
+    font-family: Jacques Francois, 'Times New Roman', Times, NotoSerifCJKtc-Regular, serif;
 }
 
 /* ----------------------------------------------- */
@@ -91,7 +101,7 @@ h3 {
 
 .news li {
     list-style: none;
-    font-family: 'Times New Roman', Times, HanaMinA, serif;
+    font-family: 'Times New Roman', Times, NotoSerifCJKtc-Regular, serif;
 }
 
 .news .btn {
@@ -124,7 +134,7 @@ h3 {
 .news .more {
     font-size: 15px;
     padding: 0 3px;
-    font-family: Jacques Francois, 'Times New Roman', Times, HanaMinA, serif;
+    font-family: Jacques Francois, 'Times New Roman', Times, NotoSerifCJKtc-Regular, serif;
 }
 
 .news .page:hover a {
@@ -197,7 +207,7 @@ h3 {
 .about .more {
     font-size: 15px;
     margin-right: 2px;
-    font-family: Jacques Francois, 'Times New Roman', Times, HanaMinA, serif;
+    font-family: Jacques Francois, 'Times New Roman', Times, NotoSerifCJKtc-Regular, serif;
 }
 
 .about .page a {

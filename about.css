@@ -1,3 +1,42 @@
+@font-face {
+    font-family: NotoSerifCJKtc-Regular;
+    src: url(font/NotoSerifCJKtc-Regular.otf);
+}
+
+@font-face {
+    font-family: Jacques Francois;
+    src: url(font/JacquesFrancois-Regular.ttf);
+}
+
+h2 {
+    color: #333;
+    font-size: 28px;
+    font-family: Jacques Francois, 'Times New Roman', Times, NotoSerifCJKtc-Regular, serif;
+}
+
+p {
+    color: #333;
+    font-size: 15px;
+    font-family: Jacques Francois, 'Times New Roman', Times, NotoSerifCJKtc-Regular, serif;
+}
+
+h3 {
+    font-size: 21px;
+    color: #333;
+    font-family: Jacques Francois, 'Times New Roman', Times, NotoSerifCJKtc-Regular, serif;
+    margin-bottom: 20px;
+}
+
+
+h4 {
+    font-size: 15px;
+    color: #7F7F7F;
+    text-align: center;
+    letter-spacing: 3px;
+    font-family: 'Times New Roman', NotoSerifCJKtc-Regular, Times, serif;
+}
+
+/* ----------------------------------------------- */
 .banner {
     width: 100%;
     display: flex;
@@ -25,25 +64,19 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    font-family: 'Times New Roman', HanaMinA, Times, serif;
-}
-
-.about h2 {
-    font-size: 28px;
 }
 
 .about i {
     width: 73px;
     border: 0.5px solid #ccc;
     margin: 3px 0 7px;
-
 }
 
 .about h3 {
     font-size: 15px;
     color: #7F7F7F;
     text-align: center;
-    font-family: 'Times New Roman', HanaMinA, Times, serif;
+    font-family: 'Times New Roman', NotoSerifCJKtc-Regular, Times, serif;
     letter-spacing: 2px;
 }
 
@@ -54,8 +87,6 @@
 }
 
 .about p {
-    font-family: Jacques Francois, HanaMinA, Times, serif;
-    font-size: 15px;
     line-height: 170%;
     padding: 0 0 64px;
 }
@@ -129,7 +160,6 @@
 /* ----------------------------------------------- */
 
 .team .bg {
-
     width: 100%;
 }
 
@@ -143,11 +173,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    font-family: Jacques Francois, HanaMinA;
-}
-
-.team h2 {
-    font-size: 28px;
 }
 
 .team i {
@@ -156,13 +181,6 @@
     margin: 5px 0 10px;
 }
 
-.team h3 {
-    font-size: 15px;
-    color: #7F7F7F;
-    text-align: center;
-    font-family: Jacques Francois, HanaMinA;
-    letter-spacing: 3px
-}
 
 .team .wrap {
     width: 100%;
@@ -178,7 +196,6 @@
 .team .card {
     display: flex;
     flex-wrap: wrap;
-    /* justify-content: space-between; */
     margin: -150px 0 100px;
     position: relative;
 }
@@ -208,16 +225,10 @@
     right: -80px;
 }
 
-.item h4 {
-    font-size: 28px;
-    font-family: Jacques Francois, HanaMinA;
-    margin: 0 0 45px 0;
-}
-
 .item li {
     line-height: 22.5px;
     font-size: 15px;
-    font-family: 'Times New Roman', HanaMinA, Times, serif;
+    font-family: 'Times New Roman', NotoSerifCJKtc-Regular, Times, serif;
 }
 
 .item .txt-k {
@@ -247,12 +258,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    font-family: Jacques Francois, HanaMinA;
 }
 
-.shop h2 {
-    font-size: 28px;
-}
 
 .shop i {
     width: 70px;
@@ -261,11 +268,7 @@
 }
 
 .shop h3 {
-    font-size: 15px;
-    color: #7F7F7F;
-    text-align: center;
-    font-family: Jacques Francois, HanaMinA;
-    letter-spacing: 3px
+    margin-bottom: 45px;
 }
 
 .shop .wrap {
@@ -278,22 +281,18 @@
 }
 
 
-.shop h4 {
-    font-size: 28px;
-}
-
 .shop li {
     font-size: 15px;
     padding-bottom: 5px;
 }
 
 .shop .media {
-    margin-top: 25px;
+    margin-top: 15px;
     display: flex;
 }
 
 .shop span {
-    padding-right: 5px;
+    padding-right: 7px;
 }
 
 .shop img {
@@ -314,7 +313,6 @@
 }
 
 .service h2 {
-    font-size: 28px;
     width: 960px;
     margin: auto;
     text-align: center;
@@ -345,7 +343,7 @@
 .service h3 {
     margin: 25px;
     font-size: 40px;
-    font-family: Jacques Francois, HanaMinA;
+    color: #eee;
 }
 
 .service i {
@@ -357,16 +355,15 @@
 }
 
 .service h4 {
-    margin: 18px;
     font-size: 18px;
-    font-family: Jacques Francois, HanaMinA;
+    margin: 18px;
+    color: #eee;
 }
 
 .service p {
-    /* margin: 25px; */
-    font-size: 10px;
-    font-family: Jacques Francois, HanaMinA;
+    font-size: 12px;
     line-height: 1.5;
+    color: #eee;
 }
 
 /* ----------------------------------------------- */

@@ -1,13 +1,23 @@
+@font-face {
+    font-family: NotoSerifCJKtc-Regular;
+    src: url(font/NotoSerifCJKtc-Regular.otf);
+}
+
+@font-face {
+    font-family: Jacques Francois;
+    src: url(font/JacquesFrancois-Regular.ttf);
+}
+
 h2 {
     font-size: 28px;
     color: #333;
-    font-family: Jacques Francois, 'Times New Roman', Times, HanaMinA, serif;
+    font-family: Jacques Francois, 'Times New Roman', Times, NotoSerifCJKtc-Regular, serif;
 }
 
 p {
     font-size: 15px;
     line-height: 1.5;
-    font-family: HanaMinA;
+    font-family: 'Times New Roman', Times, NotoSerifCJKtc-Regular, serif;
     color: #333;
     font-style: normal;
 }
@@ -15,7 +25,7 @@ p {
 h3 {
     font-size: 21px;
     color: #333;
-    font-family: HanaMinA;
+    font-family: 'Times New Roman', Times, NotoSerifCJKtc-Regular, serif;
     margin-bottom: 20px;
 }
 
@@ -24,13 +34,13 @@ h4 {
     font-size: 18px;
     color: #7F7F7F;
     text-align: center;
-    font-family: 'Times New Roman', HanaMinA, Times, serif;
+    font-family: 'Times New Roman', NotoSerifCJKtc-Regular, Times, serif;
 }
 
 span {
     font-size: 15px;
     line-height: 1.5;
-    font-family: Gowun Batang, 'Times New Roman', Times, HanaMinA, serif;
+    font-family: Gowun Batang, 'Times New Roman', Times, NotoSerifCJKtc-Regular, serif;
     color: #333;
     font-style: normal;
 }
@@ -110,7 +120,7 @@ span {
     padding: 9px 23px;
     box-shadow: 0px 0px 4px #666;
     color: #eee;
-    font-family: Gowun Batang, 'Times New Roman', Times, HanaMinA, serif;
+    font-family: Gowun Batang, 'Times New Roman', Times, NotoSerifCJKtc-Regular, serif;
 }
 
 .course .date {
@@ -140,7 +150,7 @@ span {
     font-size: 21px;
     line-height: 1.5;
     transition: .3s;
-    font-family: Gowun Batang, 'Times New Roman', Times, HanaMinA, serif;
+    font-family: Gowun Batang, 'Times New Roman', Times, NotoSerifCJKtc-Regular, serif;
 }
 
 .course a:hover {

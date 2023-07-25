@@ -1,21 +1,41 @@
-p {
-    font-size: 15px;
-    line-height: 1.5;
-    font-family: Jacques Francois, 'Times New Roman', Times, HanaMinA, serif;
-    color: #333
+@font-face {
+    font-family: NotoSerifCJKtc-Regular;
+    src: url(font/NotoSerifCJKtc-Regular.otf);
+}
+
+@font-face {
+    font-family: Jacques Francois;
+    src: url(font/JacquesFrancois-Regular.ttf);
 }
 
 h2 {
     font-size: 28px;
-    font-family: Jacques Francois, 'Times New Roman', Times, HanaMinA, serif;
-    color: #333
+    color: #333;
+    font-family: Jacques Francois, 'Times New Roman', Times, NotoSerifCJKtc-Regular, serif;
+}
+
+p {
+    font-size: 15px;
+    line-height: 1.5;
+    font-family: Jacques Francois, 'Times New Roman', Times, NotoSerifCJKtc-Regular, serif;
+    color: #333;
+    font-style: normal;
 }
 
 h3 {
+    font-size: 21px;
+    color: #333;
+    font-family: Jacques Francois, 'Times New Roman', Times, NotoSerifCJKtc-Regular, serif;
+    margin-bottom: 20px;
+}
+
+
+h4 {
     font-size: 15px;
     color: #7F7F7F;
-    font-family: 'Times New Roman', HanaMinA, Times, serif;
-    letter-spacing: 2px;
+    text-align: center;
+    font-family: Jacques Francois, 'Times New Roman', Times, NotoSerifCJKtc-Regular, serif;
+    letter-spacing: 3px;
 }
 
 /* ----------------------------------------------- */
@@ -49,7 +69,7 @@ h3 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    font-family: 'Times New Roman', HanaMinA, Times, serif;
+    font-family: 'Times New Roman', NotoSerifCJKtc-Regular, Times, serif;
 }
 
 .deco .leaf img {
@@ -93,7 +113,7 @@ h3 {
 
 .info label {
     font-size: 15px;
-    font-family: Jacques Francois, 'Times New Roman', Times, HanaMinA, serif;
+    font-family: Jacques Francois, 'Times New Roman', Times, NotoSerifCJKtc-Regular, serif;
     padding: 7px 13px;
     background-color: #A07B67;
     color: #eee;
@@ -121,7 +141,7 @@ select {
     background-color: #eee;
     border: 0px;
     border-radius: 5px;
-    font-family: Jacques Francois, 'Times New Roman', Times, HanaMinA, serif;
+    font-family: Jacques Francois, 'Times New Roman', Times, NotoSerifCJKtc-Regular, serif;
     color: #666;
 }
 
@@ -152,7 +172,7 @@ textarea:focus {
 
 .updata input {
     font-size: 15px;
-    font-family: Jacques Francois, 'Times New Roman', Times, HanaMinA, serif;
+    font-family: Jacques Francois, 'Times New Roman', Times, NotoSerifCJKtc-Regular, serif;
     background-color: #A07B67;
     color: #eee;
     margin: 0 20px 0;

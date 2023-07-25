@@ -1,3 +1,13 @@
+@font-face {
+    font-family: NotoSerifCJKtc-Regular;
+    src: url(font/NotoSerifCJKtc-Regular.otf);
+}
+
+@font-face {
+    font-family: Jacques Francois;
+    src: url(font/JacquesFrancois-Regular.ttf);
+}
+
 .header {
     width: 100%;
     display: flex;
@@ -18,7 +28,7 @@
     color: #333;
     text-decoration: none;
     margin: 30px;
-    font-family: Jacques Francois, HanaMinA;
+    font-family: Jacques Francois, NotoSerifCJKtc-Regular;
     transition: .2s;
 }
 
@@ -55,35 +65,35 @@
 
 .footer .item h3 {
     font-size: 18px;
-    font-family: Jacques Francois, HanaMinA;
+    font-family: Jacques Francois, 'Times New Roman', Times, NotoSerifCJKtc-Regular, serif;
     color: #333;
     margin: 96px 0 64px 0;
 }
 
 .footer .item li {
     font-size: 15px;
-    font-family: Jacques Francois, HanaMinA;
+    font-family: Jacques Francois, 'Times New Roman', Times, NotoSerifCJKtc-Regular, serif;
     color: #333;
     margin: 0 0 16px;
 }
 
 .footer .contact h3 {
     font-size: 18px;
-    font-family: Jacques Francois, HanaMinA;
+    font-family: Jacques Francois, 'Times New Roman', Times, NotoSerifCJKtc-Regular, serif;
     margin: 96px 0 32px 0;
     color: #333;
 }
 
 .footer .map h3 {
     font-size: 18px;
-    font-family: Jacques Francois, HanaMinA;
+    font-family: Jacques Francois, 'Times New Roman', Times, NotoSerifCJKtc-Regular, serif;
     margin: 32px 0 32px 0;
     color: #333;
 }
 
 .footer .items li {
     font-size: 15px;
-    font-family: Jacques Francois, HanaMinA;
+    font-family: NotoSerifCJKtc-Regular, 'Times New Roman', Times, serif;
     color: #333;
     padding: 0 0 8px 0;
 }
@@ -114,4 +124,5 @@
     font-size: 8px;
     color: #333;
     padding: 30px;
+    font-family: NotoSerifCJKtc-Regular, 'Times New Roman', Times, serif;
 }
