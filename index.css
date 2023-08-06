@@ -14,6 +14,12 @@ h2 {
     font-family: Jacques Francois, 'Times New Roman', Times, NotoSerifCJKtc-Regular, serif;
 }
 
+h3 {
+    color: #333;
+    font-size: 25px;
+    font-family: Jacques Francois, 'Times New Roman', Times, NotoSerifCJKtc-Regular, serif;
+}
+
 p {
     color: #333;
     font-size: 15px;
@@ -21,11 +27,12 @@ p {
     line-height: 1.5;
 }
 
-h3 {
+span {
     color: #333;
-    font-size: 25px;
-    font-family: Jacques Francois, 'Times New Roman', Times, NotoSerifCJKtc-Regular, serif;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, NotoSerifCJKtc-Regular, serif;
 }
+
 
 /* ----------------------------------------------- */
 
@@ -105,7 +112,7 @@ h3 {
 }
 
 .news .btn {
-    font-size: 18px;
+    font-size: 15px;
     color: #fff;
     background-color: #A07B67;
     text-align: center;
@@ -361,22 +368,42 @@ h3 {
     overflow: hidden;
 }
 
-
 .product img {
     vertical-align: top;
     width: 285px;
     height: 390px;
     object-fit: cover;
-    margin: 0 8px 0;
+    margin-right: 15px;
+    margin-bottom: 10px;
 }
 
-.product .pic a:nth-of-type(1) img {
+
+.product .item:nth-of-type(1) img {
     border-radius: 80px 0 0 0;
 }
 
+.product .item span {
+    display: block;
+    margin: 5px 0;
+    color: #A07B67;
+}
+
+.product .item a {
+    text-decoration: none;
+    color: #A07B67;
+    font-family: 'Times New Roman', Times, NotoSerifCJKtc-Regular, serif;
+    font-size: 15px;
+    transition: .2s;
+}
+
+.product .item a:hover {
+    color: #C48710;
+    transition: .2s;
+}
+
 .product .chang {
-    margin-left: 35.5%;
-    margin-top: 10px;
+    margin-left: 34.8%;
+    margin-top: 15px;
     display: flex;
 }
 

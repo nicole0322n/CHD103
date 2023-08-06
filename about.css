@@ -91,10 +91,22 @@ h4 {
     padding: 0 0 64px;
 }
 
-.about .vase {
+.about .vase img {
     position: absolute;
     top: 0;
     left: -370px;
+    vertical-align: top;
+    z-index: 1;
+}
+
+.about .vase::after {
+    content: '';
+    width: 170px;
+    height: 196px;
+    background-color: #A07B67;
+    position: absolute;
+    top: 90px;
+    left: -335px;
 }
 
 .about .white-flower {
@@ -118,14 +130,7 @@ h4 {
     right: -300px;
 }
 
-.about .back-square {
-    width: 170px;
-    height: 196px;
-    background-color: #A07B67;
-    position: absolute;
-    top: 90px;
-    left: -335px;
-}
+
 
 .about .sign {
     position: absolute;
@@ -196,8 +201,9 @@ h4 {
 .team .card {
     display: flex;
     flex-wrap: wrap;
-    margin: -150px 0 100px;
+    margin: -100px 0 200px;
     position: relative;
+    align-items: end;
 }
 
 
@@ -212,16 +218,19 @@ h4 {
 }
 
 
-.item .txt-c {
-    width: 480px;
+.item .txt {
+    width: 565px;
+    height: 250px;
     background-color: #fff;
-    padding: 55px 150px;
-    margin: -250px 0 200px 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: -35px -50px;
 }
 
 .item .deco-c {
     position: absolute;
-    top: 60px;
+    top: 100px;
     right: -80px;
 }
 
@@ -231,19 +240,13 @@ h4 {
     font-family: 'Times New Roman', NotoSerifCJKtc-Regular, Times, serif;
 }
 
-.item .txt-k {
-    background-color: #fff;
-    padding: 55px 150px;
-    position: absolute;
-    left: 0;
-    bottom: -40px;
-}
-
 .item .deco-k {
     position: absolute;
-    top: -70px;
+    top: 100px;
     left: -80px;
 }
+
+
 
 /* ----------------------------------------------- */
 
@@ -308,14 +311,13 @@ h4 {
 
 }
 
-.service .bg img {
+/* .service .bg img {
     min-height: 100%;
     width: 100%;
     vertical-align: top;
-}
+} */
 
 .service h2 {
-    width: 960px;
     margin: auto;
     text-align: center;
     color: #eee;
@@ -338,32 +340,34 @@ h4 {
 .service .card {
     width: 230px;
     margin: 16px;
-    text-align: center;
     color: #eee;
 }
 
 .service h3 {
     margin: 25px;
-    font-size: 40px;
+    font-size: 35px;
     color: #eee;
+    text-align: center;
 }
 
-.service i {
+.service h3::after {
+    content: '';
     width: 1px;
     height: 55px;
     background: #fff;
-    margin: 19px;
-    display: inline-block;
+    margin: 20px auto 0;
+    display: block;
 }
 
 .service h4 {
-    font-size: 18px;
-    margin: 18px;
+    font-size: 20px;
+    margin: 15px;
     color: #eee;
+    letter-spacing: 0px;
 }
 
 .service p {
-    font-size: 12px;
+    font-size: 14px;
     line-height: 1.5;
     color: #eee;
 }

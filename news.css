@@ -58,13 +58,12 @@ h2 {
     padding: 8px 12px;
     box-shadow: 0px 0px 4px #666;
     color: #eee;
-    font-family: Gowun Batang, 'Times New Roman', Times, NotoSerifCJKtc-Regular, serif;
+    font-family: 'Times New Roman', Times, NotoSerifCJKtc-Regular, serif;
 }
 
 .news .date {
-    padding: 5px 0;
     font-size: 13px;
-    font-family: Gowun Batang, 'Times New Roman', Times, NotoSerifCJKtc-Regular, serif;
+    font-family: 'Times New Roman', Times, NotoSerifCJKtc-Regular, serif;
     color: #aaa;
 }
 
@@ -74,10 +73,10 @@ h2 {
     font-size: 15px;
     line-height: 1.5;
     transition: .3s;
-    font-family: Gowun Batang, 'Times New Roman', Times, NotoSerifCJKtc-Regular, serif;
+    font-family: 'Times New Roman', Times, NotoSerifCJKtc-Regular, serif;
 }
 
-.news a:hover {
+.news .txt:hover {
     color: #C48710;
     transition: .2s;
 }

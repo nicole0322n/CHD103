@@ -1,32 +1,54 @@
+@font-face {
+    font-family: NotoSerifCJKtc-Regular;
+    src: url(font/NotoSerifCJKtc-Regular.otf);
+}
+
+@font-face {
+    font-family: Jacques Francois;
+    src: url(font/JacquesFrancois-Regular.ttf);
+}
+
 label {
     font-size: 15px;
     line-height: 1.5;
-    font-family: Gowun Batang, 'Times New Roman', Times, HanaMinA, serif;
+    font-family: Gowun Batang, 'Times New Roman', Times, NotoSerifCJKtc-Regular, serif;
     color: #333;
 }
 
 h2 {
     font-size: 28px;
-    font-family: Jacques Francois, 'Times New Roman', Times, HanaMinA, serif;
     color: #333;
+    font-family: Jacques Francois, 'Times New Roman', Times, NotoSerifCJKtc-Regular, serif;
+}
+
+p {
+    font-size: 15px;
+    line-height: 1.5;
+    font-family: Jacques Francois, 'Times New Roman', Times, NotoSerifCJKtc-Regular, serif;
+    color: #333;
+    font-style: normal;
 }
 
 h3 {
     font-size: 21px;
-    font-family: Jacques Francois, 'Times New Roman', Times, HanaMinA, serif;
     color: #333;
+    font-family: Jacques Francois, 'Times New Roman', Times, NotoSerifCJKtc-Regular, serif;
+    margin-bottom: 20px;
 }
 
+
 h4 {
-    font-size: 18px;
-    font-family: Jacques Francois, 'Times New Roman', Times, HanaMinA, serif;
-    color: #333;
+    font-size: 15px;
+    color: #7F7F7F;
+    text-align: center;
+    font-family: Jacques Francois, 'Times New Roman', Times, NotoSerifCJKtc-Regular, serif;
+    letter-spacing: 3px;
 }
 
 a {
     font-size: 15px;
     line-height: 1.5;
-    font-family: Gowun Batang, 'Times New Roman', Times, HanaMinA, serif;
+    font-family: Gowun Batang, 'Times New Roman', Times, NotoSerifCJKtc-Regular, serif;
     color: #333;
     text-decoration: none;
 }
@@ -34,7 +56,7 @@ a {
 span {
     font-size: 15px;
     line-height: 1.5;
-    font-family: Gowun Batang, 'Times New Roman', Times, HanaMinA, serif;
+    font-family: Gowun Batang, 'Times New Roman', Times, NotoSerifCJKtc-Regular, serif;
     color: #333;
     text-decoration: none;
 }
@@ -115,6 +137,8 @@ span {
     border: 0px;
     background-color: #eee;
     border-radius: 3px;
+    padding-left: 10px;
+    font-family: 'Times New Roman', Times, NotoSerifCJKtc-Regular, serif;
 }
 
 .login .info input:focus {
@@ -123,14 +147,15 @@ span {
 
 .login .eye {
     position: absolute;
-    top: 114px;
-    right: 10px;
+    top: 115px;
+    right: 8px;
+    font-size: 13px;
 }
 
 .login .forget {
     display: flex;
     justify-content: end;
-    margin-top: -10px;
+    margin-top: -20px;
 }
 
 .login .forget a {
@@ -140,7 +165,7 @@ span {
 }
 
 .login .forget a:hover {
-    color: #333;
+    color: #C48710;
     transition: .2s;
 }
 
@@ -153,7 +178,7 @@ span {
     border: 0px;
     margin: 15px 0;
     transition: .2s;
-    font-family: Jacques Francois, 'Times New Roman', Times, HanaMinA, serif;
+    font-family: Jacques Francois, 'Times New Roman', Times, NotoSerifCJKtc-Regular, serif;
 }
 
 .login .updata input:hover {
@@ -171,7 +196,7 @@ span {
     content: '';
     border: 1px solid #ccc;
     display: inline-block;
-    width: 130px;
+    width: 127px;
     margin: 3px 10px 3px 0;
 }
 
@@ -179,7 +204,7 @@ span {
     content: '';
     border: 1px solid #ccc;
     display: inline-block;
-    width: 130px;
+    width: 127px;
     margin: 3px 0 3px 10px;
 }
 

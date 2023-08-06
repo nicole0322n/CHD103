@@ -106,7 +106,44 @@ a {
 
 .product .btn {
     display: flex;
+    /* align-items: center; */
+    font-size: 15px;
+    font-family: Gowun Batang, 'Times New Roman', Times, NotoSerifCJKtc-Regular, serif;
+}
+
+.product .btn .num {
+    width: 100px;
+    height: 30px;
+    border: 1px solid #333;
+    display: flex;
     align-items: center;
+    justify-content: space-around;
+}
+
+.product .btn .num::before {
+    content: '–';
+    /* margin-right: 10px; */
+}
+
+.product .btn .num::after {
+    content: '+';
+    /* margin-left: auto; */
+}
+
+.product .btn .buy {
+    width: 100px;
+    height: 30px;
+    background-color: #A07B67;
+    color: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    transition: .2s;
+}
+
+.product .btn .buy:hover {
+    background-color: #C48710;
+    transition: .2s;
 }
 
 .product .btn span {
@@ -195,12 +232,16 @@ a {
     transform: rotate(-15deg);
 }
 
-.other .pic {
+.other .wrap {
     width: 996px;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+
+}
+
+.other .pic {
     overflow: hidden;
 }
 
@@ -213,6 +254,23 @@ a {
 .other .pic img:hover {
     transform: scale(1.06);
     transition: .3s;
+}
+
+.other .txt {
+    margin: 10px 0;
+}
+
+.other .txt a {
+    color: #A07B67;
+}
+
+.other .txt a:hover {
+    color: #C48710;
+}
+
+.other .txt span {
+    display: block;
+    color: #A07B67;
 }
 
 /* --------------------------- */

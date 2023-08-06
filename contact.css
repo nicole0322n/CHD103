@@ -129,6 +129,8 @@ h4 {
     border: 0px;
     border-radius: 5px;
     padding-left: 10px;
+    font-family: 'Times New Roman', Times, NotoSerifCJKtc-Regular, serif;
+
 }
 
 .info input:focus {
@@ -137,7 +139,7 @@ h4 {
 
 select {
     margin-bottom: 21px;
-    width: 253px;
+    width: 262px;
     height: 29px;
     background-color: #eee;
     border: 0px;
@@ -155,13 +157,16 @@ textarea:focus {
 }
 
 .msg {
-    width: 328px;
+    width: 342px;
     height: 130px;
     background-color: #eee;
     border: 0px;
     border-radius: 5px;
     margin: 10px 20px 0;
     resize: none;
+    padding: 10px;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, NotoSerifCJKtc-Regular, serif;
 }
 
 .updata {
