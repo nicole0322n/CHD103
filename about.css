@@ -36,6 +36,10 @@ h4 {
     font-family: 'Times New Roman', NotoSerifCJKtc-Regular, Times, serif;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 /* ----------------------------------------------- */
 .banner {
     width: 100%;
@@ -44,6 +48,8 @@ h4 {
 }
 
 .banner img {
+    width: 100%;
+    max-width: 1200px;
     vertical-align: top;
     margin: -25px 0 0;
 }
@@ -59,7 +65,8 @@ h4 {
 }
 
 .about .title {
-    width: 100px;
+    max-width: 100px;
+    width: 100%;
     margin: 0 auto 80px;
     display: flex;
     flex-wrap: wrap;
@@ -67,7 +74,8 @@ h4 {
 }
 
 .about i {
-    width: 73px;
+    max-width: 73px;
+    width: 100%;
     border: 0.5px solid #ccc;
     margin: 3px 0 7px;
 }
@@ -81,7 +89,8 @@ h4 {
 }
 
 .about .txt {
-    width: 375px;
+    max-width: 375px;
+    width: 100%;
     margin: auto;
     position: relative;
 }
@@ -193,7 +202,8 @@ h4 {
 }
 
 .team .item {
-    width: 800px;
+    max-width: 800px;
+    width: 100%;
     margin: auto;
     border: 1px solid transparent;
 }
@@ -202,7 +212,6 @@ h4 {
     display: flex;
     flex-wrap: wrap;
     margin: -100px 0 200px;
-    position: relative;
     align-items: end;
 }
 
@@ -219,18 +228,20 @@ h4 {
 
 
 .item .txt {
-    width: 565px;
+    max-width: 565px;
+    width: 100%;
     height: 250px;
     background-color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: -35px -50px;
+    position: relative;
 }
 
 .item .deco-c {
     position: absolute;
-    top: 100px;
+    top: -80px;
     right: -80px;
 }
 
@@ -242,7 +253,7 @@ h4 {
 
 .item .deco-k {
     position: absolute;
-    top: 100px;
+    top: -80px;
     left: -80px;
 }
 
@@ -275,7 +286,8 @@ h4 {
 }
 
 .shop .wrap {
-    width: 996px;
+    max-width: 996px;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -308,14 +320,7 @@ h4 {
 
 .service {
     width: 100%;
-
 }
-
-/* .service .bg img {
-    min-height: 100%;
-    width: 100%;
-    vertical-align: top;
-} */
 
 .service h2 {
     margin: auto;
@@ -330,7 +335,8 @@ h4 {
 }
 
 .service .item {
-    width: 996px;
+    max-width: 996px;
+    width: 100%;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
@@ -370,6 +376,7 @@ h4 {
     font-size: 14px;
     line-height: 1.5;
     color: #eee;
+    text-align: justify;
 }
 
 /* ----------------------------------------------- */

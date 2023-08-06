@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="header and footer.css">
     <link rel="stylesheet" href="buy.css">
+    <script src="buy.js"></script>
     <script src="https://kit.fontawesome.com/2d432a1e75.js" crossorigin="anonymous"></script>
 </head>
 
@@ -44,69 +45,86 @@
 
     <div class="process">
 
-        <div class="txt">
-            <p>確認訂單</p>
-            <span>1</span>
-            <div class="line">
-                <i></i>
+        <div class="card">
+            <div class="txt">
+                <p>確認訂單</p>
+            </div>
+            <div class="cirNow">
+                <span>1</span>
             </div>
         </div>
-        <div class="txt">
-            <p>資料填寫</p>
-            <span>2</span>
+        <div class="card">
+            <div class="txt">
+                <p>資料填寫</p>
+            </div>
+            <div class="cir">
+                <span>2</span>
+            </div>
         </div>
-        <div class="txt">
-            <p>付款/配送方式</p>
-            <span>3</span>
+        <div class="card">
+            <div class="txt">
+                <p>付款/配送方式</p>
+            </div>
+            <div class="cir">
+                <span>3</span>
+            </div>
         </div>
-        <div class="txt">
-            <p>結帳完成</p>
-            <span>4</span>
+        <div class="card">
+            <div class="txt">
+                <p>結帳完成</p>
+            </div>
+            <div class="cir">
+                <span>4</span>
+            </div>
+        </div>
+        <div class="line">
+            <i></i>
         </div>
     </div>
 
     <!-- ----------------------------------------------------------------- -->
-
-    <div class="wrap">
-        <div class="item">
-            <div class="checkbox">
-                <input type="checkbox">
-            </div>
-            <div class="pic">商品圖片</div>
-            <div class="name">商品名稱</div>
-            <div class="nmb">數量</div>
-            <div class="cost">金額</div>
-            <div class="delete">刪除</div>
-        </div>
-        <div class="item">
-            <div class="checkbox">
-                <input type="checkbox">
-            </div>
-            <div class="pic"><img src="img/product/秋色.jpg" alt=""></div>
-            <div class="name">中型乾燥花束【秋色】</div>
-            <div class="nmb">1</div>
-            <div class="cost">NT $650</div>
-            <div class="delete"><a href="#"><img src="img/signup/垃圾桶.png" alt=""></a></div>
-        </div>
-        <div class="item">
-            <div class="checkbox">
-                <input type="checkbox">
-            </div>
-            <div class="pic"><img src="img/product/白戀.jpg" alt=""></div>
-            <div class="name">大型乾燥花束【白戀】</div>
-            <div class="nmb">1</div>
-            <div class="cost">NT $750</div>
-            <div class="delete"><a href="#"><img src="img/signup/垃圾桶.png" alt=""></a></div>
-        </div>
-        <div class="item">
-            <div class="checkbox"></div>
-            <div class="pic"></div>
-            <div class="name">總計算</div>
-            <div class="nmb">2</div>
-            <div class="cost">NT $1,400</div>
-            <div class="delete"></div>
-        </div>
-    </div>
+    <table>
+        <tr>
+            <th>選擇</th>
+            <th>商品圖片</th>
+            <th>商品名稱</th>
+            <th>數量</th>
+            <th>金額</th>
+            <th>刪除</th>
+        </tr>
+        <tr>
+            <td><input type="checkbox"></td>
+            <td><img src="img/product/秋色.jpg" alt=""></td>
+            <td>中型乾燥花束【秋色】</td>
+            <td class="btn">
+                <input type="button" value="–" onclick="btnMinus(1)">
+                <input type="text" size="1" value="1" id="num1">
+                <input type="button" value="+" onclick="btnPlus(1)">
+            </td>
+            <td>NT $<span id="total1">650</span></td>
+            <td><button><i class="fa-solid fa-trash-can" style="color: #aaa;"></i></button></td>
+        </tr>
+        <tr>
+            <td><input type="checkbox"></td>
+            <td><img src="img/product/白戀.jpg" alt=""></td>
+            <td>大型乾燥花束【白戀】</td>
+            <td class="btn">
+                <input type="button" value="–" onclick="btnMinus(2)">
+                <input type="text" size="1" value="1" id="num2">
+                <input type="button" value="+" onclick="btnPlus(2)">
+            </td>
+            <td>NT $<span id="total2">750</span></td>
+            <td><button><i class="fa-solid fa-trash-can" style="color: #aaa;"></i></button></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td>總計算</td>
+            <td>2</td>
+            <td>NT $1,400</td>
+            <td></td>
+        </tr>
+    </table>
 
     <!-- ----------------------------------------------------------------- -->
 

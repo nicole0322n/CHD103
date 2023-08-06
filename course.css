@@ -54,29 +54,32 @@ span {
 }
 
 .banner img {
+    width: 100%;
+    max-width: 1200px;
     vertical-align: top;
     margin: -25px 0 0;
 }
 
 /* ----------------------------------------------- */
 .course .wrap {
-    width: 1200px;
+    max-width: 1200px;
+    width: 100%;
     margin: 0 auto 100px;
     display: flex;
     flex-wrap: wrap;
 }
 
 .course .title {
-    width: 1200px;
+    max-width: 1200px;
+    width: 100%;
     text-align: center;
     margin: 75px 0 5px;
     padding: 10px 0;
 }
 
-
-
 .course .card {
-    width: 370px;
+    max-width: 370px;
+    width: 100%;
     margin: 35px 15px;
     position: relative;
 }

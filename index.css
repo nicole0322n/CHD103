@@ -33,11 +33,20 @@ span {
     font-family: 'Times New Roman', Times, NotoSerifCJKtc-Regular, serif;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 
 /* ----------------------------------------------- */
 
 .banner {
-    width: 1200px;
+    width: 100%;
+}
+
+.banner .wrap {
+    width: 100%;
+    max-width: 1200px;
     margin: auto;
 }
 
@@ -88,7 +97,12 @@ span {
 /* ----------------------------------------------- */
 
 .news {
-    width: 1200px;
+    width: 100%;
+}
+
+.news .wrap {
+    max-width: 1200px;
+    width: 100%;
     margin: 112px auto;
     display: flex;
     flex-wrap: wrap;
@@ -165,15 +179,17 @@ span {
 }
 
 .about .warp {
-    width: 996px;
+    width: 100%;
+    max-width: 996px;
     margin: auto;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
     position: relative;
 }
 
 .about .txt {
     margin: 85px 0;
+    width: 40%;
 }
 
 .about h2 {
@@ -181,16 +197,16 @@ span {
 }
 
 .about p {
-    width: 406px;
     text-align: justify;
     padding: 0 0 32px;
 }
 
 
 .about .pic {
-    position: absolute;
-    bottom: -36px;
-    right: 0;
+    width: calc(60% -100px);
+    margin: 0 0 -60px 100px;
+    display: flex;
+    align-items: end;
 }
 
 .about .pic img {
@@ -268,7 +284,8 @@ span {
 }
 
 .service .wrap {
-    width: 996px;
+    max-width: 850px;
+    width: 100%;
     border: 2px solid transparent;
     margin: auto;
 }
@@ -290,8 +307,9 @@ span {
     text-align: right;
 }
 
-.card img {
+.card img:first-child {
     vertical-align: top;
+    width: 300px;
 }
 
 .card .txt {
@@ -343,7 +361,8 @@ span {
 }
 
 .product .title {
-    width: 996px;
+    width: 100%;
+    max-width: 996px;
     margin: auto;
 }
 

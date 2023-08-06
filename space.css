@@ -38,6 +38,10 @@ h4 {
     letter-spacing: 3px;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 /* ----------------------------------------------- */
 
 .banner {
@@ -47,6 +51,8 @@ h4 {
 }
 
 .banner img {
+    width: 100%;
+    max-width: 1200px;
     vertical-align: top;
     margin: -25px 0 0;
 }
@@ -57,10 +63,6 @@ h4 {
     margin: 80px 0 128px;
 }
 
-.process img {
-    vertical-align: top;
-}
-
 .process .title {
     width: 200px;
     margin: 0 auto 55px;
@@ -69,7 +71,7 @@ h4 {
     justify-content: center;
 }
 
-.process i {
+.process .title i {
     width: 190px;
     border: 1px solid #ccc;
     margin: 9px 0 7px;
@@ -79,7 +81,8 @@ h4 {
 /* --------------------- */
 
 .process .wrap {
-    width: 996px;
+    max-width: 996px;
+    width: 100%;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
@@ -89,6 +92,14 @@ h4 {
 
 .process .card {
     text-align: center;
+}
+
+.process .card i {
+    font-size: 53px;
+}
+
+.process .next i {
+    font-size: 20px;
 }
 
 .process .card img {
@@ -138,7 +149,8 @@ h4 {
 }
 
 .service .item {
-    width: 966px;
+    max-width: 960px;
+    width: 100%;
     margin: auto;
 }
 
@@ -209,7 +221,8 @@ h4 {
 /* ----------------------------------------------- */
 
 .con {
-    width: 1200px;
+    max-width: 1200px;
+    width: 100%;
     display: flex;
     justify-content: center;
     text-align: center;

@@ -1,20 +1,49 @@
-p {
-    font-size: 15px;
-    line-height: 1.5;
-    font-family: Gowun Batang, 'Times New Roman', Times, HanaMinA, serif;
-    color: #333
+@font-face {
+    font-family: NotoSerifCJKtc-Regular;
+    src: url(font/NotoSerifCJKtc-Regular.otf);
+}
+
+@font-face {
+    font-family: Jacques Francois;
+    src: url(font/JacquesFrancois-Regular.ttf);
 }
 
 h2 {
     font-size: 28px;
-    font-family: Jacques Francois, 'Times New Roman', Times, HanaMinA, serif;
-    color: #333
+    color: #333;
+    font-family: Jacques Francois, 'Times New Roman', Times, NotoSerifCJKtc-Regular, serif;
+}
+
+p {
+    font-size: 15px;
+    line-height: 1.5;
+    font-family: Jacques Francois, 'Times New Roman', Times, NotoSerifCJKtc-Regular, serif;
+    color: #333;
+    font-style: normal;
+}
+
+table {
+    font-size: 15px;
+    line-height: 1.5;
+    font-family: 'Times New Roman', Times, NotoSerifCJKtc-Regular, serif;
+    color: #333;
+    font-style: normal;
+}
+
+table input {
+    font-size: 15px;
+    line-height: 1.5;
+    font-family: 'Times New Roman', Times, NotoSerifCJKtc-Regular, serif;
+    color: #333;
+    font-style: normal;
+    text-align: center;
 }
 
 /* ----------------------------------------------- */
 
 .buy {
-    width: 1200px;
+    width: 100%;
+    max-width: 1200px;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
@@ -31,58 +60,97 @@ h2 {
 /* ----------------------------------------------- */
 
 .process {
-    width: 500px;
+    max-width: 500px;
+    width: 100%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin: auto;
-    border: 1px solid red;
 }
 
-.process .line {}
+.process .line {
+    margin: auto;
+}
 
 .process .line i {
-    display: inline-block;
-    width: 500px;
+    display: flex;
+    width: 414px;
     border: 1px solid #A07B67;
-    position: absolute;
-    bottom: 12px;
-    left: 0;
+    margin: -13px 0;
+    z-index: -1;
 }
 
 .process .txt {
-    position: relative;
-    /* align-items: center; */
+    margin: 10px 0;
 }
 
-.process .txt p {}
-
-.process .txt span {
-    display: block;
+.process .cirNow {
     width: 25px;
     height: 25px;
-    color: #eee;
     background-color: #A07B67;
     border-radius: 30px;
+    margin: auto;
 }
 
+.process .cir {
+    width: 25px;
+    height: 25px;
+    border: 1px solid #A07B67;
+    border-radius: 30px;
+    margin: auto;
+}
+
+.process .cirNow span {
+    display: block;
+    padding: 4px 8px;
+    color: #eee;
+}
+
+.process .cir span {
+    display: block;
+    padding: 4px 8px;
+    color: #A07B67;
+}
+
+
+
 /* ----------------------------------------------- */
+table {
+    width: 100%;
+    max-width: 960px;
+    margin: 70px auto;
+}
 
-.wrap {}
+table img {
+    vertical-align: top;
+    width: 150px;
+    border-radius: 500px 500px 0 0;
+}
 
-.wrap .item {}
+table th {
+    text-align: left;
+}
 
-.wrap .checkbox {}
+table tr {}
 
-.wrap .pic {}
 
-.wrap .pic img {}
+table .btn input {
+    border: 1px solid #666;
+    margin: -3px;
+}
 
-.wrap .name {}
+table .btn input:focus {
+    outline: none;
+}
 
-.wrap .nmb {}
+table button {
+    border: 0;
+    background-color: transparent;
+}
 
-.wrap .cost {}
-
-.wrap .delete {}
+table td {
+    padding: 15px 0;
+    border-top: 1px solid #ccc;
+}
 
 /* ----------------------------------------------- */

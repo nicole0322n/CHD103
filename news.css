@@ -24,14 +24,16 @@ h2 {
 /* ----------------------------------------------- */
 
 .news .wrap {
-    width: 1200px;
+    max-width: 1200px;
+    width: 100%;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
 }
 
 .news .title {
-    width: 1200px;
+    max-width: 1200px;
+    width: 100%;
     text-align: center;
     border-bottom: 1px solid #666;
     margin: 30px 0 55px;
@@ -39,7 +41,8 @@ h2 {
 }
 
 .news .card {
-    width: 370px;
+    max-width: 370px;
+    width: 100%;
     margin: 35px 15px;
     position: relative;
 }
@@ -84,7 +87,8 @@ h2 {
 /* ----------------------------------------------- */
 
 .page {
-    width: 1200px;
+    max-width: 1200px;
+    width: 100%;
     margin: auto;
     display: flex;
     justify-content: center;

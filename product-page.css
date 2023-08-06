@@ -51,14 +51,16 @@ a {
 /* ----------------------------------------------- */
 
 .product .wrap {
-    width: 1200px;
+    max-width: 1200px;
+    width: 100%;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
 }
 
 .product .title {
-    width: 1200px;
+    max-width: 1200px;
+    width: 100%;
     text-align: center;
     border-bottom: 1px solid #666;
     margin: 30px 0 75px;
@@ -66,7 +68,8 @@ a {
 }
 
 .product .card {
-    width: 996px;
+    max-width: 996px;
+    width: 100%;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
@@ -106,7 +109,6 @@ a {
 
 .product .btn {
     display: flex;
-    /* align-items: center; */
     font-size: 15px;
     font-family: Gowun Batang, 'Times New Roman', Times, NotoSerifCJKtc-Regular, serif;
 }
@@ -122,12 +124,10 @@ a {
 
 .product .btn .num::before {
     content: '–';
-    /* margin-right: 10px; */
 }
 
 .product .btn .num::after {
     content: '+';
-    /* margin-left: auto; */
 }
 
 .product .btn .buy {
@@ -210,12 +210,14 @@ a {
 
 /* ----------------------------------------------- */
 .other {
-    width: 996px;
+    max-width: 996px;
+    width: 100%;
     margin: auto;
 }
 
 .other .title {
-    width: 996px;
+    max-width: 996px;
+    width: 100%;
     text-align: center;
     border-bottom: 1px solid #aaa;
     margin: 75px 0 55px;
@@ -233,7 +235,8 @@ a {
 }
 
 .other .wrap {
-    width: 996px;
+    max-width: 996px;
+    width: 100%;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
@@ -277,7 +280,8 @@ a {
 
 .other .page {
     margin: 10px auto 55px;
-    width: 996px;
+    max-width: 996px;
+    width: 100%;
 }
 
 .other .item {
