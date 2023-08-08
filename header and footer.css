@@ -8,10 +8,6 @@
     src: url(font/JacquesFrancois-Regular.ttf);
 }
 
-/* body {
-    width: 1920px;
-} */
-
 .header {
     width: 100%;
     margin: auto;
@@ -25,16 +21,21 @@
 }
 
 .header .title {
-    font-size: 0;
+    display: flex;
+    align-items: center;
+}
+
+.header .title .logo {
+    margin: 0;
 }
 
 .header .title a {
     font-size: 15px;
     color: #333;
     text-decoration: none;
-    margin: 30px;
     font-family: Jacques Francois, NotoSerifCJKtc-Regular;
     transition: .2s;
+    margin: 30px;
 }
 
 .header nav a:hover {
@@ -44,14 +45,98 @@
 
 .header img {
     vertical-align: top;
+    width: 100%;
 }
 
 .header .sign {
     margin: 0 8px;
 }
 
-.header .icon-opacity {
-    opacity: 0;
+.header .hb {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        padding: 20px 20px;
+        justify-content: space-between;
+    }
+
+    .header .logo {
+        position: absolute;
+        /* margin: auto; */
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        top: -80px;
+    }
+
+    .header .logo img {
+        width: 60%;
+    }
+
+
+
+    /* -----漢堡 & 選單----- */
+    /* -----選單----- */
+    .header .title {
+        position: absolute;
+        width: 90%;
+        margin: 0 5%;
+        background-color: #fff;
+        border-radius: 10px;
+        opacity: 0.7;
+        top: 100%;
+        left: 0;
+        flex-direction: column;
+        padding: 20px 0;
+    }
+
+
+    .header .title a {
+        margin: 10px auto;
+    }
+
+    /* -----漢堡----- */
+    .hb label {
+        width: 40px;
+        height: 40px;
+        display: block;
+        position: relative;
+    }
+
+    .header .hb {
+        display: flex;
+    }
+
+    .hb span {
+        width: 80%;
+        height: 4px;
+        background-color: #a07b67;
+        border-radius: 10px;
+        position: absolute;
+        inset: 0;
+        margin: auto;
+    }
+
+    .hb span:nth-child(1) {
+        translate: 0px -10px;
+        rotate: 0deg;
+        transition: translate 0.3s 0.3s,
+            rotate 0.3s 0s;
+    }
+
+    .hb span:nth-child(2) {
+        opacity: 1;
+        transition: opacity 0.3s 0.6s;
+    }
+
+    .hb span:nth-child(3) {
+        translate: 0px 10px;
+        rotate: 0deg;
+        transition: translate 0.3s 0.3s,
+            rotate 0.3s 0s;
+    }
 }
 
 /* ----------------------------------------------- */
@@ -132,3 +217,21 @@
     padding: 30px;
     font-family: NotoSerifCJKtc-Regular, 'Times New Roman', Times, serif;
 }
+
+@media screen and (max-width: 768px) {
+    .footer .item {
+        display: none;
+    }
+
+    .footer .items {
+        width: 100%;
+        margin: 0 10%;
+    }
+
+    .footer .map {
+        margin-bottom: 20px;
+    }
+
+    .footer .contact h3 {
+        margin: 65px 0 32px 0;
+    }

@@ -147,15 +147,14 @@ body {
 }
 
 
-.news .page {
-    width: 90px;
-    margin-left: auto;
-}
-
 .news .more {
     font-size: 15px;
     padding: 0 3px;
     font-family: Jacques Francois, 'Times New Roman', Times, NotoSerifCJKtc-Regular, serif;
+}
+
+.news .page {
+    margin-left: auto;
 }
 
 .news .page:hover a {
@@ -212,6 +211,7 @@ body {
 .about .pic img {
     vertical-align: bottom;
     padding: 0 0 0 10px;
+    width: 100%;
 }
 
 .about .deco img {
@@ -276,6 +276,9 @@ body {
 
 
 /* ----------------------------------------------- */
+.ser-txt {
+    display: none;
+}
 
 .service {
     width: 100%;
@@ -436,4 +439,167 @@ body {
 .product .chang i.active {
     width: 23px;
     border: 3px solid #C48710;
+}
+
+/* -- RWD ---------------------------------------------------- */
+
+@media screen and (max-width: 768px) {
+    .banner .pic {
+        margin: -8px;
+    }
+
+    .banner .btn img {
+        display: none;
+    }
+
+    .banner .chang {
+        display: none;
+    }
+
+    .line,
+    .slash,
+    .deco,
+    .deco-tree,
+    .deco-leaf,
+    .deco-dot {
+        display: none;
+    }
+
+    /* ---------------------------------- */
+
+    .news .wrap {
+        width: 90%;
+        margin: 70px auto;
+    }
+
+    .news h2 {
+        margin-bottom: 20px;
+    }
+
+    .news .btn {
+        margin: 10px 5px;
+        padding: 8px 10px;
+    }
+
+    .news .item {
+        border: none;
+        width: 90%;
+    }
+
+    .news .page {
+        margin: 50px auto 0;
+    }
+
+    /* ---------------------------------- */
+
+
+    .about .txt {
+        width: 90%;
+        margin: 65px 10% 50px;
+    }
+
+    .about .pic {
+        margin: 0 auto -60px;
+        width: 80%;
+        justify-content: center;
+    }
+
+    .about .pic img {
+        width: 50%;
+        height: 100%;
+    }
+
+    .about .page a,
+    .news .page a {
+        color: #A07B67;
+    }
+
+    .about .back-page .line,
+    .back-page .slash,
+    .news .back-page .line,
+    .back-page .slash {
+        border: 1px solid #A07B67;
+    }
+
+    /* ---------------------------------- */
+    .ser-txt {
+        display: flex;
+        /* justify-content: center; */
+        margin: -80px 5% 120px;
+    }
+
+    .ser-txt::after {
+        content: "";
+        width: 150px;
+        border-bottom: 1px solid #333;
+        margin: 14px;
+    }
+
+    .service {
+        margin: 0;
+    }
+
+    .service .card {
+        width: 80%;
+        margin: auto;
+    }
+
+    .service .card img {
+        width: 40%;
+        margin: 30px 10px;
+    }
+
+    .card .txt {
+        margin: 0 20px;
+    }
+
+    .card h3 {
+        margin: 0 0 20px 0;
+    }
+
+    .service .item {
+        margin: -96px 0 5px;
+    }
+
+    /* ---------------------------------- */
+
+    .product {
+        margin: 0 auto 80px;
+    }
+
+    .product h2 {
+        transform: rotate(0deg);
+        padding: 70px 0;
+    }
+
+    .product .pic {
+        display: flex;
+        margin-left: 0%;
+        overflow: hidden;
+        justify-content: center;
+    }
+
+    .product .item:nth-of-type(1) img {
+        border-radius: 0;
+    }
+
+    .product .chang {
+        display: none;
+    }
+
+}
+
+
+@media screen and (max-width:414px) {
+
+    .service .card img {
+        width: 50%;
+        margin: auto;
+        border-radius: 160px 160px 0 0;
+    }
+
+    .card .txt {
+        margin: 25px auto 80px;
+        text-align: center;
+    }
 }

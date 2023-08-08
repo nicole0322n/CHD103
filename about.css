@@ -379,4 +379,37 @@ body {
     text-align: justify;
 }
 
-/* ----------------------------------------------- */
+/* --------------RWD----------------------------- */
+
+
+@media screen and (max-width: 768px) {
+
+    .vase,
+    .square,
+    .white-flower,
+    .hang,
+    .leaf,
+    .tree,
+    .deco-c,
+    .deco-k,
+    .fruit {
+        display: none;
+    }
+
+    .about .sign {
+        bottom: -50px;
+        right: 110px;
+    }
+
+    .banner img {
+        margin: -8px;
+    }
+
+    .banner .chang {
+        display: none;
+    }
+
+    .shop iframe {
+        width: 30px;
+    }
+}

@@ -9,28 +9,38 @@
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="header and footer.css">
     <script src="https://kit.fontawesome.com/2d432a1e75.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 
 <body>
+    <script>
+        AOS.init();
+    </script>
     <div class="header">
         <nav class="title">
             <a href="about.html">關於我們</a>
             <a href="news.html">最新消息</a>
             <a href="product.html">產品列表</a>
-        </nav>
-        <nav class="title"></nav>
-        <a class="logo" href="index.html"><img src="img/share/logo.svg" alt="logo"></a>
-        </nav>
-        <nav class="title">
+
+            <a class="logo" href="index.html"><img src="img/share/logo.svg" alt="logo"></a>
+
             <a href="course.html">花藝教室</a>
             <a href="space.html">空間佈置</a>
             <a href="contact.html">聯絡我們</a>
         </nav>
-        </nav>
-        <nav>
+        <nav class="icon">
             <a class="sign" href="signup.html"><i class="fa-solid fa-user" style="color: #9f9f9f;"></i></a>
             <a href="#"><i class="fa-solid fa-cart-shopping" style="color: #9f9f9f;"></i></a>
         </nav>
+        <div class="cover"></div>
+        <div class="hb">
+            <label for="menu-switch">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
     </div>
 
     <!-- ----------------------------------------------------------------- -->
@@ -58,10 +68,10 @@
 
     <article class="news">
         <div class="wrap">
-            <div class="title">
+            <div class="title" data-aos="fade-up" data-aos-duration="3000">
                 <h2>News</h2>
             </div>
-            <div class="item">
+            <div class="item" data-aos="fade-up" data-aos-duration="3000">
                 <ul>
                     <li>
                         <span class="btn">活動</span>
@@ -92,7 +102,7 @@
 
     <article class="about">
         <div class="warp">
-            <div class="txt">
+            <div class="txt" data-aos="fade-up" data-aos-duration="3000">
                 <h2>About us</h2>
                 <p>Preserve店名的由來，是從乾燥花「將美好時光保留」的寓意中，擷取”保留”的含意而命名，希望送禮與收禮的客人，都能將這段美好的回憶保留在記憶中。
                     Preserve團隊嚴格控管花材，並致力於提供高品質花材與服務，且帶給顧客具有設計感的花藝作品。</p>
@@ -104,7 +114,7 @@
                     </div>
                 </div>
             </div>
-            <div class="pic">
+            <div class="pic" data-aos="fade-up" data-aos-duration="3000">
                 <img src="img/index/about_F.png" alt="">
                 <img src="img/index/shop.jpg" alt="">
             </div>
@@ -115,11 +125,11 @@
     </article>
 
     <!-- ----------------------------------------------------------------- -->
-
+    <h2 class="ser-txt">Service</h2>
     <article class="service">
         <div class="wrap">
             <div class="item">
-                <div class="card">
+                <div class="card" data-aos="fade-right">
                     <img src="img/index/quality.png" alt="">
                     <div class="txt">
                         <h3>Superior Quality</h3>
@@ -129,7 +139,7 @@
                     <img class="deco-tree" src="img/share/tree.png" alt="">
                 </div>
 
-                <div class="card">
+                <div class="card" data-aos="fade-left">
                     <img src="img/index/flower.png" alt="">
                     <div class="txt">
                         <h3>Professional Technique</h3>
@@ -139,7 +149,7 @@
                     <img class="deco-dot" src="img/share/dotR.png" alt="">
                 </div>
 
-                <div class="card">
+                <div class="card" data-aos="fade-right">
                     <img src="img/index/card.png" alt="">
                     <div class="txt">
                         <h3>Cutomization</h3>
@@ -150,7 +160,7 @@
 
                 </div>
 
-                <div class="card">
+                <div class="card" data-aos="fade-left">
                     <img src="img/index/gift.png" alt="">
                     <div class="txt">
                         <h3>Fashionable Packing</h3>
@@ -161,7 +171,7 @@
                     <img class="deco-dot" src="img/share/dotR.png" alt="">
                 </div>
 
-                <div class="card">
+                <div class="card" data-aos="fade-right">
                     <img src="img/index/for.png" alt="">
                     <div class="txt">
                         <h3>Security Assurance</h3>
@@ -176,7 +186,7 @@
     <!-- ----------------------------------------------------------------- -->
 
     <div class="product">
-        <div class="title">
+        <div class="title" data-aos="fade-up" data-aos-duration="3000">
             <h2>Product</h2>
         </div>
         <div class="pic">
@@ -224,6 +234,14 @@
                     小型乾燥花束【燕脂】
                 </a>
                 <span class="cost">NT 550</span>
+            </div>
+
+            <div class="item">
+                <a href="#">
+                    <img src="img/index/product1.jpg" alt="">
+                    中型乾燥花束【秋色】
+                </a>
+                <span class="cost">NT 650</span>
             </div>
         </div>
         <div class="chang">

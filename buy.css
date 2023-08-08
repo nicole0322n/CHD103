@@ -68,6 +68,10 @@ table input {
     margin: auto;
 }
 
+.process .card {
+    z-index: 1;
+}
+
 .process .line {
     margin: auto;
 }
@@ -95,7 +99,7 @@ table input {
 .process .cir {
     width: 25px;
     height: 25px;
-    border: 1px solid #A07B67;
+    border: 1.5px solid #A07B67;
     border-radius: 30px;
     margin: auto;
 }
@@ -110,6 +114,8 @@ table input {
     display: block;
     padding: 4px 8px;
     color: #A07B67;
+    background-color: #fff;
+    border-radius: 30px;
 }
 
 
@@ -131,9 +137,6 @@ table th {
     text-align: left;
 }
 
-table tr {}
-
-
 table .btn input {
     border: 1px solid #666;
     margin: -3px;
@@ -153,4 +156,22 @@ table td {
     border-top: 1px solid #ccc;
 }
 
+table .allNum {
+    padding-left: 40px;
+}
+
 /* ----------------------------------------------- */
+
+
+.rule {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.rule img {
+    vertical-align: top;
+    margin: 50px 0 120px;
+}
