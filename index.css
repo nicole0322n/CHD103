@@ -453,13 +453,13 @@ section {
     .text {
         white-space: nowrap;
         text-transform: uppercase;
-        animation: scroll 40s linear infinite;
+        animation: scroll 60s linear infinite;
         font-size: 80px;
         color: #eee;
 
         &:nth-child(2) {
-            animation: scroll2 40s linear infinite;
-            animation-delay: -20s;
+            animation: scroll2 60s linear infinite;
+            animation-delay: -30s;
         }
     }
 }
@@ -503,7 +503,7 @@ section {
 }
 
 .box1 {
-    w100% grid-column: 1/2;
+    grid-column: 1/2;
     grid-row: 1/2;
 }
 

@@ -16,17 +16,13 @@
     justify-content: center;
     align-items: center;
     z-index: 1;
-    padding-left: 50px;
     box-sizing: border-box;
 }
 
 .header .title {
     display: flex;
     align-items: center;
-}
-
-.header .title .logo {
-    margin: 0;
+    padding-left: 50px;
 }
 
 .header .title a {
@@ -36,6 +32,11 @@
     font-family: Jacques Francois, NotoSerifCJKtc-Regular;
     transition: .2s;
     margin: 30px;
+    padding: 35px 0;
+}
+
+.header .logo {
+    position: absolute;
 }
 
 .header nav a:hover {
@@ -56,6 +57,10 @@
     display: none;
 }
 
+#menu-switch {
+    display: none;
+}
+
 @media screen and (max-width: 768px) {
     .header {
         padding: 20px 20px;
@@ -63,12 +68,10 @@
     }
 
     .header .logo {
-        position: absolute;
-        /* margin: auto; */
         left: 50%;
+        margin: auto;
         transform: translateX(-50%);
         text-align: center;
-        top: -80px;
     }
 
     .header .logo img {
@@ -85,17 +88,27 @@
         margin: 0 5%;
         background-color: #fff;
         border-radius: 10px;
-        opacity: 0.7;
+        opacity: 0.8;
         top: 100%;
         left: 0;
         flex-direction: column;
-        padding: 20px 0;
+        padding: 1px;
+        display: none;
     }
-
 
     .header .title a {
-        margin: 10px auto;
+        margin: 10px;
+        padding: 5px;
     }
+
+    #menu-switch:checked+.header>.title {
+        display: flex;
+    }
+
+    .header .title a:nth-child(4) {
+        display: none;
+    }
+
 
     /* -----漢堡----- */
     .hb label {
@@ -137,6 +150,37 @@
         transition: translate 0.3s 0.3s,
             rotate 0.3s 0s;
     }
+
+
+    #menu-switch:checked+.header .hb span:nth-child(1) {
+        translate: 0px 0px;
+        rotate: 45deg;
+        transition: translate 0.3s,
+            rotate 0.6s 0.3s;
+    }
+
+    #menu-switch:checked+.header .hb span:nth-child(2) {
+        display: none;
+        transition: opacity 0.3s;
+    }
+
+    #menu-switch:checked+.header .hb span:nth-child(3) {
+        translate: 0px 0px;
+        rotate: -45deg;
+        transition: translate 0.3s,
+            rotate 0.6s 0.3s;
+    }
+
+
+    /* -------遮罩------- */
+    #menu-switch:checked .cover {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background-color: #0008;
+        z-index: 1;
+    }
+
 }
 
 /* ----------------------------------------------- */
@@ -235,3 +279,4 @@
     .footer .contact h3 {
         margin: 65px 0 32px 0;
     }
+}
