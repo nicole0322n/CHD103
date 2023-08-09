@@ -215,5 +215,6 @@ table .allNum {
 
     table th:nth-child(4) {
         display: flex;
+        text-align: center;
     }
 }
