@@ -485,6 +485,18 @@ body {
         display: none;
     }
 
+    .about {
+        margin: 50px 0;
+    }
+
+    .about .title {
+        margin: 0 auto 50px;
+    }
+
+    .about .txt {
+        width: 80%;
+    }
+
     /* ------------------------------------------------------ */
 
     .shop .item {

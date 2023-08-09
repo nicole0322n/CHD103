@@ -86,9 +86,9 @@
         position: absolute;
         width: 90%;
         margin: 0 5%;
-        background-color: #fff;
+        background-color: #a07b67;
         border-radius: 10px;
-        opacity: 0.8;
+        /* opacity: 0.8; */
         top: 100%;
         left: 0;
         flex-direction: column;
@@ -99,6 +99,7 @@
     .header .title a {
         margin: 10px;
         padding: 5px;
+        color: #eee;
     }
 
     #menu-switch:checked+.header>.title {

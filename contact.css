@@ -210,12 +210,28 @@ textarea:focus {
 
     .leaf,
     .fruit {
-        display: flex;
+        display: none;
     }
 
     .data {
-        width: 90%;
+        width: 80%;
         margin: 50px auto;
-        text-align: justify;
+    }
+
+    .data .wrap {
+        margin: auto;
+    }
+
+    .info input {
+        width: 200px;
+    }
+
+    select {
+        margin-bottom: 21px;
+        width: 212px;
+    }
+
+    .msg {
+        width: 295px;
     }
 }
