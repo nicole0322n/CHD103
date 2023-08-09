@@ -176,3 +176,29 @@ h2 {
     border: 1px solid #C48710;
     transition: .2s;
 }
+
+/* --RWD----------------------------------------------- */
+
+@media screen and (max-width:768px) {
+
+    .news .title {
+        margin: 20px 0 10px;
+    }
+
+    .news .wrap {
+        width: 95%;
+    }
+
+    .news .card {
+        max-width: calc(95% / 3 - 10px);
+        margin: 20px auto;
+    }
+
+}
+
+@media screen and (max-width:414px) {
+    .news .card {
+        max-width: calc(95% / 2 - 15px);
+        margin: 20px auto;
+    }
+}

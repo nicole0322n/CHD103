@@ -140,16 +140,17 @@ h2 {
 
 /* ----------------------------------------------- */
 .product .item {
-    max-width: 996px;
+    max-width: 960px;
     width: 100%;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .product .card {
     width: 285px;
+    margin: 15px 15px 50px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -189,7 +190,6 @@ h2 {
 
 .product span {
     display: block;
-    margin-bottom: 50px;
 }
 
 .product .buy {
@@ -265,6 +265,7 @@ h2 {
 
 /* --------------------------- */
 
+
 .front-page .line {
     border: 1px solid #333;
     width: 25px;
@@ -325,4 +326,35 @@ h2 {
 .back-page:hover a {
     border: 1px solid #C48710;
     transition: .2s;
+}
+
+@media screen and (max-width:768px) {
+    .product .wrap {
+        width: 90%;
+    }
+
+    .product .title {
+        margin: 20px 0 55px;
+    }
+}
+
+@media screen and (max-width:414px) {
+
+    .product .card {
+        width: 170px;
+        margin: 15px 8px 15px;
+    }
+
+    .main-menu>li {
+        padding: 0 15px;
+    }
+
+    .main-menu {
+        margin-bottom: 15px;
+    }
+
+    .product .buy {
+        display: none;
+    }
+
 }

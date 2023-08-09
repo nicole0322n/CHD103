@@ -267,3 +267,122 @@ body {
     vertical-align: top;
     width: 25px;
 }
+
+/* ---RWD----------------------------------------------- */
+@media screen and (max-width:768px) {
+    .process {
+        margin: 80px 0;
+    }
+
+    .process .wrap {
+        width: 85%;
+    }
+
+
+    .service .item {
+        width: 85%;
+    }
+
+    .service .card .pic {
+        width: 50%;
+        box-sizing: border-box;
+    }
+
+
+    .service .card .txt {
+        width: 50%;
+        margin: 0 15px;
+    }
+
+    .service .deco-r {
+        top: -60px;
+        left: -40px;
+    }
+
+    .service .deco-r img,
+    .service .deco-l img {
+        width: 70%;
+    }
+
+    .service .deco-l {
+        top: -60px;
+        right: -40px;
+    }
+
+    .service .fruit img {
+        right: 0px;
+    }
+
+    .service .leaf img {
+        left: -40px;
+    }
+
+    .service .tree img {
+        top: -10px;
+    }
+
+}
+
+@media screen and (max-width:414px) {
+    .process {
+        margin: 60px 0;
+    }
+
+    .process .title {
+        margin: 0 auto 30px;
+    }
+
+    /* --------------------- */
+
+
+    .process .card {
+        margin: 10px;
+        text-align: center;
+    }
+
+    .process .card i {
+        font-size: 40px;
+    }
+
+    .process .next i {
+        font-size: 10px;
+    }
+
+    .process .card span {
+        margin-top: 10px;
+    }
+
+    /* --------------------- */
+
+    .service .deco-r,
+    .service .deco-l,
+    .fruit,
+    .leaf,
+    .tree {
+        display: none;
+    }
+
+    .service .card {
+        flex-wrap: wrap;
+    }
+
+    .service .card .pic {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .service .card .txt {
+        width: 100%;
+        margin: 0;
+    }
+
+    .service .card .txt h3 {
+        text-align: center;
+        margin: 20px;
+        color: #A07B67;
+    }
+
+    .service .item .card:nth-child(2n) {
+        text-align: left;
+    }
+}

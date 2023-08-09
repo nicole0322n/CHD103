@@ -86,7 +86,7 @@ span {
 
 .login .card {
     width: 100%;
-    max-width: 996px;
+    max-width: 960px;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
@@ -250,4 +250,41 @@ span {
     right: -40px;
     width: 25px;
     transform: rotate(30deg);
+}
+
+/* ----RWD----------------------------------------- */
+
+@media screen and (max-width:768px) {
+    .login .wrap {
+        width: 90%;
+    }
+
+    .login .title {
+        margin: 20px 0 55px;
+    }
+
+    .login .pic {
+        margin: 10px;
+    }
+
+    .login .pic .leaf img {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width:414px) {
+    .login .pic {
+        display: none;
+    }
+
+    .login .item {
+        width: 100%;
+        margin: auto;
+    }
+
+    .login .updata {
+        width: 100%;
+        text-align: center;
+    }
 }

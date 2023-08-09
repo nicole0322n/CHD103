@@ -203,3 +203,19 @@ textarea:focus {
     background-color: #D8A43F;
     transition: .2s;
 }
+
+
+/* --RWD--------------------------------------------- */
+@media screen and (max-width:414px) {
+
+    .leaf,
+    .fruit {
+        display: flex;
+    }
+
+    .data {
+        width: 90%;
+        margin: 50px auto;
+        text-align: justify;
+    }
+}

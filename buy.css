@@ -175,3 +175,45 @@ table .allNum {
     vertical-align: top;
     margin: 50px 0 120px;
 }
+
+/* ----RWD---------------------------------------------- */
+@media screen and (max-width:768px) {
+    table {
+        width: 85%;
+    }
+
+    .rule img {
+        width: 90%;
+    }
+
+    .buy {
+        width: 90%;
+    }
+
+    .buy .title {
+        margin: 20px 0 55px;
+    }
+}
+
+@media screen and (max-width:414px) {
+
+    .buy .title {
+        margin: 20px 0 30px;
+    }
+
+    .process {
+        width: 80%;
+    }
+
+    .process .line i {
+        width: 250px;
+    }
+
+    .process .txt {
+        margin: 5px 0;
+    }
+
+    table th:nth-child(4) {
+        display: flex;
+    }
+}

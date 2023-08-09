@@ -636,7 +636,7 @@ section {
     /* ---------------------------------- */
     .ser-txt {
         display: flex;
-        margin: -80px 5% 120px;
+        margin: -80px 70px 120px;
     }
 
     .ser-txt::after {
@@ -680,14 +680,13 @@ section {
 
     .product h2 {
         transform: rotate(0deg);
-        padding: 70px 0;
+        padding: 70px;
         translate: none;
     }
 
     .product .pic {
         display: flex;
         margin-left: 0%;
-        overflow: hidden;
         justify-content: center;
     }
 
