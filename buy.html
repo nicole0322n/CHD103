@@ -93,49 +93,50 @@
     </div>
 
     <!-- ----------------------------------------------------------------- -->
-    <table>
-        <tr>
-            <th>選擇</th>
-            <th>商品圖片</th>
-            <th>商品名稱</th>
-            <th>數量</th>
-            <th>金額</th>
-            <th>刪除</th>
-        </tr>
-        <tr>
-            <td><input type="checkbox"></td>
-            <td><img src="img/product/秋色.jpg" alt=""></td>
-            <td>中型乾燥花束【秋色】</td>
-            <td class="btn">
-                <input type="button" value="–" onclick="btnMinus(1)">
-                <input type="text" size="1" value="1" id="num1">
-                <input type="button" value="+" onclick="btnPlus(1)">
-            </td>
-            <td>NT $<span id="total1">650</span></td>
-            <td><button><i class="fa-solid fa-trash-can" style="color: #aaa;"></i></button></td>
-        </tr>
-        <tr>
-            <td><input type="checkbox"></td>
-            <td><img src="img/product/白戀.jpg" alt=""></td>
-            <td>大型乾燥花束【白戀】</td>
-            <td class="btn">
-                <input type="button" value="–" onclick="btnMinus(2)">
-                <input type="text" size="1" value="1" id="num2">
-                <input type="button" value="+" onclick="btnPlus(2)">
-            </td>
-            <td>NT $<span id="total2">750</span></td>
-            <td><button><i class="fa-solid fa-trash-can" style="color: #aaa;"></i></button></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td>總計算</td>
-            <td class="allNum">2</td>
-            <td>NT $1,400</td>
-            <td></td>
-        </tr>
-    </table>
-
+    <div class="table-wrapper">
+        <table>
+            <tr>
+                <th>選擇</th>
+                <th>商品圖片</th>
+                <th>商品名稱</th>
+                <th>數量</th>
+                <th>金額</th>
+                <th>刪除</th>
+            </tr>
+            <tr>
+                <td><input type="checkbox"></td>
+                <td><img src="img/product/秋色.jpg" alt=""></td>
+                <td>中型乾燥花束【秋色】</td>
+                <td class="btn">
+                    <input type="button" value="–" onclick="btnMinus(1)">
+                    <input type="text" size="1" value="1" id="num1">
+                    <input type="button" value="+" onclick="btnPlus(1)">
+                </td>
+                <td>NT $<span id="total1">650</span></td>
+                <td><button><i class="fa-solid fa-trash-can" style="color: #aaa;"></i></button></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox"></td>
+                <td><img src="img/product/白戀.jpg" alt=""></td>
+                <td>大型乾燥花束【白戀】</td>
+                <td class="btn">
+                    <input type="button" value="–" onclick="btnMinus(2)">
+                    <input type="text" size="1" value="1" id="num2">
+                    <input type="button" value="+" onclick="btnPlus(2)">
+                </td>
+                <td>NT $<span id="total2">750</span></td>
+                <td><button><i class="fa-solid fa-trash-can" style="color: #aaa;"></i></button></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td>總計算</td>
+                <td class="allNum">2</td>
+                <td>NT $1,400</td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
     <!-- ----------------------------------------------------------------- -->
 
     <div class="rule">

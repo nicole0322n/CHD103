@@ -160,6 +160,9 @@ table .allNum {
     padding-left: 40px;
 }
 
+
+
+
 /* ----------------------------------------------- */
 
 
@@ -213,8 +216,28 @@ table .allNum {
         margin: 5px 0;
     }
 
-    table th:nth-child(4) {
-        display: flex;
-        text-align: center;
+    table tr:nth-child(1) {
+        display: none;
+    }
+
+    table td:nth-child(1) {
+        display: none;
+    }
+
+    table td {
+        display: inline-block;
+        border-top: 0;
+        margin: 5px;
+    }
+
+    table td::before {
+        display: inline-block;
+        width: 100%;
+        font-weight: 500;
+        padding: 6px 0;
+    }
+
+    table td:nth-child(2) {
+        border-top: 1px solid #ccc;
     }
 }
