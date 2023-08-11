@@ -20,6 +20,24 @@ p {
     font-family: Jacques Francois, 'Times New Roman', Times, NotoSerifCJKtc-Regular, serif;
     color: #333;
     font-style: normal;
+    text-align: justify;
+}
+
+h3 {
+    font-size: 21px;
+    color: #333;
+    font-family: Jacques Francois, 'Times New Roman', Times, NotoSerifCJKtc-Regular, serif;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+h4 {
+    font-size: 15px;
+    color: #7F7F7F;
+    text-align: center;
+    letter-spacing: 3px;
+    font-family: 'Times New Roman', NotoSerifCJKtc-Regular, Times, serif;
 }
 
 table {
@@ -168,15 +186,129 @@ table .allNum {
 
 .rule {
     width: 100%;
-    max-width: 1200px;
-    margin: auto;
+    margin: 30px auto 60px;
     display: flex;
     justify-content: center;
 }
 
-.rule img {
-    vertical-align: top;
-    margin: 50px 0 120px;
+.rule .item {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #F8F4ED;
+    border: 20px solid #E3DBCD;
+    padding: 30px 60px;
+    box-sizing: border-box;
+}
+
+.rule .read {
+    margin: 30px 0;
+}
+
+/* -------------------*/
+
+.rule .shipping-free {
+    margin: 30px 0;
+    border-top: 1px solid #A07B67;
+    border-bottom: 1px solid #A07B67;
+}
+
+.rule .shipping-free h3 {
+    margin: 10px 0;
+}
+
+.rule .shipping-free span:first-child {
+    font-size: 50px;
+    font-family: 'Times New Roman', NotoSerifCJKtc-Regular, Times, serif;
+    color: #A07B67;
+    margin: 0 8px;
+}
+
+.rule .shipping-free span:last-child {
+    color: #A07B67;
+    margin: 0 8px 0 0;
+}
+
+/* -------------------*/
+
+.rule .pay {
+    margin: 30px 0;
+}
+
+.rule .pay span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: #A07B67;
+    border-radius: 20px;
+    text-align: center;
+    align-items: center;
+    color: #eee;
+    margin: 0 5px 0 0;
+}
+
+.rule .pay li {
+    margin: 10px;
+}
+
+/* -------------------*/
+
+.rule .shipping {
+    margin: 30px 0;
+}
+
+.rule .shipping .chose {
+    display: flex;
+}
+
+.rule .shipping .card {
+    width: calc(100% / 3);
+    margin: 0 5px;
+}
+
+.rule .shipping span {
+    display: block;
+    text-align: center;
+    color: #A07B67;
+    margin: 0 0 20px;
+}
+
+.rule .shipping span::before,
+.rule .shipping span::after {
+    content: '';
+    width: 15px;
+    border: 1px solid #A07B67;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.rule .shipping span::before {
+    transform: rotate(45deg);
+}
+
+.rule .shipping span::after {
+    transform: rotate(-45deg);
+}
+
+.rule .shipping i {
+    font-size: 80px;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.rule .shipping ul {
+    margin: 20px 0 10px 7px;
+}
+
+.rule .shipping li {
+    margin: 7px 0;
+}
+
+.rule .shipping li::before {
+    content: '– ';
 }
 
 /* ----RWD---------------------------------------------- */
@@ -216,28 +348,54 @@ table .allNum {
         margin: 5px 0;
     }
 
-    table tr:nth-child(1) {
+    table {
+        margin: 40px auto;
+    }
+
+    table tr:nth-child(1),
+    table td:nth-child(1),
+    table button,
+    table .line .allNum {
         display: none;
     }
 
-    table td:nth-child(1) {
-        display: none;
-    }
-
-    table td {
+    table td:nth-of-type(n+3) {
         display: inline-block;
         border-top: 0;
-        margin: 5px;
+        margin: 0 25px;
+        padding: 10px 0;
     }
 
-    table td::before {
+    table .line .allPrice {
+        display: inline;
+        color: #A07B67;
+        font-size: 23px;
+        padding: 0;
+        margin: 0;
+        text-align: right;
+    }
+
+
+    /* table td:nth-of-type(n+3)::before {
         display: inline-block;
         width: 100%;
         font-weight: 500;
         padding: 6px 0;
+    } */
+
+    table .line {
+        border-top: 1px solid #ccc;
     }
 
-    table td:nth-child(2) {
-        border-top: 1px solid #ccc;
+    .rule .shipping-free span:first-child {
+        font-size: 30px;
+    }
+
+    .rule .item {
+        padding: 15px 20px;
+    }
+
+    .rule .card li {
+        font-size: 12px;
     }
 }
