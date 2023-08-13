@@ -442,4 +442,8 @@ table .line .allPrice {
     .check {
         justify-content: center;
     }
+
+    .check button {
+        width: 100px;
+    }
 }
