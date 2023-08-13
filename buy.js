@@ -36,7 +36,7 @@ function cal(index) {
 function all() {
     let totalNum = 0;
     let totalPrice = 0;
-    for (let i = 0; i <= 1; i++) {
+    for (let i = 0; i < nums.length; i++) {
         //   let nums = [1, 1];
         // const prices = [650, 750];
         totalPrice += nums[i] * prices[i];
@@ -50,13 +50,5 @@ function all() {
     // allNum 的內容  帶入 totalNum
     allNum.textContent = totalNum;
     allPrice.textContent = totalPrice;
-
-
-
-    document.getElementById("allNum").value = totalNum;
-
-    // alert(document.getElementById("allNum").value);
-    document.getElementById("allPrice").value = totalPrice;
-
 
 }
