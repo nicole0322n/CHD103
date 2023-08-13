@@ -142,7 +142,7 @@ table input {
 table {
     width: 100%;
     max-width: 960px;
-    margin: 70px auto;
+    margin: 70px auto 10px;
 }
 
 table img {
@@ -178,7 +178,45 @@ table .allNum {
     padding-left: 40px;
 }
 
+table .line .allPrice {
+    color: #A07B67;
+    font-size: 23px;
+}
 
+
+
+/* ----------------------------------------------- */
+
+.check {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto 70px;
+    display: flex;
+    justify-content: end;
+}
+
+.check button {
+    margin-left: 15px;
+    border-radius: 0;
+    width: 80px;
+    height: 30px;
+    font-size: 15px;
+    font-family: Jacques Francois, 'Times New Roman', Times, NotoSerifCJKtc-Regular, serif;
+}
+
+.check button:first-child {
+    border: 1px solid #A07B67;
+    background-color: #fff;
+    width: 80px;
+    height: 30px;
+    color: #A07B67;
+}
+
+.check button:last-child {
+    border: 0;
+    background-color: #A07B67;
+    color: #eee;
+}
 
 
 /* ----------------------------------------------- */
@@ -328,6 +366,10 @@ table .allNum {
     .buy .title {
         margin: 20px 0 55px;
     }
+
+    .check {
+        width: 85%;
+    }
 }
 
 @media screen and (max-width:414px) {
@@ -368,8 +410,6 @@ table .allNum {
 
     table .line .allPrice {
         display: inline;
-        color: #A07B67;
-        font-size: 23px;
         padding: 0;
         margin: 0;
         text-align: right;
@@ -397,5 +437,9 @@ table .allNum {
 
     .rule .card li {
         font-size: 12px;
+    }
+
+    .check {
+        justify-content: center;
     }
 }

@@ -417,7 +417,8 @@ body {
     transition: .2s;
 }
 
-.product .item a:hover {
+.product .item:hover a,
+.product .item:hover span {
     color: #C48710;
     transition: .2s;
 }
@@ -702,7 +703,6 @@ section {
         /* width: 90%; */
     }
 
-    .course img {}
 }
 
 

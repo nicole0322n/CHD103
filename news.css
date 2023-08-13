@@ -79,7 +79,7 @@ h2 {
     font-family: 'Times New Roman', Times, NotoSerifCJKtc-Regular, serif;
 }
 
-.news .txt:hover {
+.news .card:hover a {
     color: #C48710;
     transition: .2s;
 }
