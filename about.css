@@ -286,7 +286,7 @@ body {
 }
 
 .shop .wrap {
-    max-width: 960 px;
+    max-width: 960px;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
