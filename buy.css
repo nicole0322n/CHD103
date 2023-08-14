@@ -207,8 +207,6 @@ table .line .allPrice {
 .check button:first-child {
     border: 1px solid #A07B67;
     background-color: #fff;
-    width: 80px;
-    height: 30px;
     color: #A07B67;
 }
 
@@ -439,15 +437,22 @@ table .line .allPrice {
         font-size: 12px;
     }
 
+
+    .check button {
+        margin-left: 10px;
+    }
+
     .check {
+        width: 90%;
         justify-content: center;
     }
 
+    /* 
     .check button {
         width: 150px;
     }
 
     .check button:first-child {
-        width: 200px;
-    }
+        width: 150px;
+    } */
 }
