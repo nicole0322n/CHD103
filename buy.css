@@ -446,4 +446,8 @@ table .line .allPrice {
     .check button {
         width: 150px;
     }
+
+    .check button:first-child {
+        width: 150px;
+    }
 }
