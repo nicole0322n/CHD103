@@ -286,7 +286,7 @@ body {
 }
 
 .shop .wrap {
-    max-width: 996px;
+    max-width: 960 px;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -335,7 +335,7 @@ body {
 }
 
 .service .item {
-    max-width: 996px;
+    max-width: 960px;
     width: 100%;
     margin: auto;
     display: flex;

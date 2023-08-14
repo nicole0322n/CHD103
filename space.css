@@ -81,7 +81,7 @@ body {
 /* --------------------- */
 
 .process .wrap {
-    max-width: 996px;
+    max-width: 960px;
     width: 100%;
     margin: auto;
     display: flex;
@@ -176,6 +176,7 @@ body {
     width: 37%;
     box-sizing: border-box;
     font-size: 15px;
+    text-align: justify;
 }
 
 .service .deco-r {
