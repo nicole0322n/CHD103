@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="header and footer.css">
     <link rel="stylesheet" href="signup.css">
     <script src="https://kit.fontawesome.com/2d432a1e75.js" crossorigin="anonymous"></script>
+    <script src="signup.js"></script>
 </head>
 
 <body>
@@ -48,43 +49,51 @@
                 <h2>會員登入</h2>
             </div>
             <div class="card">
+                <!-- 右圖 -->
                 <div class="pic">
                     <img src="img/signup/signup.jpg" alt="">
                     <div class="leaf">
                         <img src="img/share/leaf.png" alt="">
                     </div>
                 </div>
+
+                <!-- 左邊帳密輸入 -->
                 <div class="item">
                     <form class="info" action="">
+                        <!-- 帳號 -->
                         <div>
                             <label for="">帳號</label>
-                            <input type="text">
+                            <input type="text" placeholder="Number">
                         </div>
+                        <!-- 密碼 -->
                         <div>
                             <label for="">密碼</label>
-                            <input type="password">
+                            <input type="password" placeholder="Password" id="password">
 
                         </div>
+                        <!-- 密碼眼睛開關/忘記密碼 -->
                         <div class="forget">
-                            <div class="eye">
+                            <div class="eye" id="eye">
                                 <i class="fa-solid fa-eye-slash" style="color: #9f9f9f;"></i>
                             </div>
                             <a href="#">忘記密碼</a>
                         </div>
                     </form>
+                    <!-- 登入按鈕 -->
                     <form class="updata" action="">
                         <input type="submit" value="登入">
                     </form>
+
                     <div class="line">
-
                         <div class="or">or</div>
-
                     </div>
+
                     <div class="media">
                         <a href="#"><img src="img/signup/line.png" alt=""></a>
                         <a href="#"><img src="img/signup/fb.png" alt=""></a>
                         <a href="#"><img src="img/signup/goole.png" alt=""></a>
                     </div>
+
                     <div class="signup">
                         <span>還沒有會員嗎?</span>
                         <a href="#">註冊會員</a>

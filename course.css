@@ -167,16 +167,17 @@ span {
 @media screen and (max-width:768px) {
 
     .course .title {
-        margin: 30px 0 15px;
+        margin: 30px 0 0;
     }
 
     .course .wrap {
         width: 95%;
+        margin: 0 auto 50px;
     }
 
     .course .card {
         max-width: calc(95% / 3 - 10px);
-        margin: 5px auto;
+        margin: 25px auto;
     }
 
     .course .fruit img {
@@ -187,16 +188,20 @@ span {
 }
 
 @media screen and (max-width:414px) {
-    .course .wrap {
-        margin: 30px auto;
+    .banner img {
+        margin: -10px 0 0;
     }
 
     .course .card {
-        max-width: 93%;
+        max-width: 95%;
         display: flex;
-        justify-content: space-between;
+        /* justify-content: space-between; */
         margin: 15px auto;
         border-bottom: 1px solid #ddd;
+    }
+
+    .course .card .txt {
+        margin-left: 15px;
     }
 
     .course .card:last-child {
