@@ -44,33 +44,17 @@ $(document).ready(function () {
     }
 });
 
-// 漢堡點擊
-$(document).ready(function () {
-    // 點擊 .hb 顯示 .title 和 .nav_bg
-    $('.hb').click(function () {
-        $('.title').toggleClass('open');
-        $('.nav_bg').toggleClass('open');
-    });
+// // 產品圖輪播
 
-    // 點擊 .nav_bg 關閉 .title 和 .nav_bg
-    $('.nav_bg').click(function () {
-        $('.title').removeClass('open');
-        $('.nav_bg').removeClass('open');
-    });
-});
+// let picWidth = $('#pic').width()
+// let picCount = $('#item').length
+// // alert(picWidth)
 
+// for (let i = 0; i < picCount; i++) {
+//     $('.chang').append(`<li></li>`)
+// }
+// $('.chang li:first').addClass('active')
 
-// 產品圖輪播
-
-let picWidth = $('#pic').width()
-let picCount = $('#item').length
-// alert(picWidth)
-
-for (let i = 0; i < picCount; i++) {
-    $('.chang').append(`<li></li>`)
-}
-$('.chang li:first').addClass('active')
-
-$('#item').width(picWidth)
-$('').()
+// $('#item').width(picWidth)
+// $('').()
 
