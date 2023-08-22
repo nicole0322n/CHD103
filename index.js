@@ -60,3 +60,17 @@ $(document).ready(function () {
 });
 
 
+// 產品圖輪播
+
+let picWidth = $('#pic').width()
+let picCount = $('#item').length
+// alert(picWidth)
+
+for (let i = 0; i < picCount; i++) {
+    $('.chang').append(`<li></li>`)
+}
+$('.chang li:first').addClass('active')
+
+$('#item').width(picWidth)
+$('').()
+

@@ -145,9 +145,10 @@ span {
 
 .login .eye {
     position: absolute;
-    top: -25px;
+    top: -30px;
     right: 8px;
     font-size: 13px;
+    padding: 5px;
 }
 
 .login .forget {
