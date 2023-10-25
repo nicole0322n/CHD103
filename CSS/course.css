@@ -1,3 +1,7 @@
+<<<<<<< HEAD:course.css
+=======
+<<<<<<< HEAD:course.css
+>>>>>>> 98c79dd0aacf130bbae2c04cc06dcc74fc227e0b:CSS/course.css
 @font-face {
     font-family: NotoSerifCJKtc-Regular;
     src: url(font/NotoSerifCJKtc-Regular.otf);
@@ -238,4 +242,210 @@ span {
     .course .fruit img {
         display: none;
     }
+<<<<<<< HEAD:course.css
+=======
+=======
+span {
+    font-size: 15px;
+    line-height: 1.5;
+    font-family: Gowun Batang, 'Times New Roman', Times, NotoSerifCJKtc-Regular, serif;
+    color: #333;
+    font-style: normal;
+}
+
+/* ----------------------------------------------- */
+
+.banner {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.banner img {
+    width: 100%;
+    max-width: 1200px;
+    vertical-align: top;
+    margin: -25px 0 0;
+}
+
+/* ----------------------------------------------- */
+.course .wrap {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto 100px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.course .title {
+    max-width: 1200px;
+    width: 100%;
+    text-align: center;
+    margin: 75px 0 5px;
+    padding: 10px 0;
+    position: relative;
+}
+
+.course .card {
+    max-width: 370px;
+    width: 100%;
+    margin: 35px 15px;
+    position: relative;
+}
+
+.course .pic {
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.course .fruit img {
+    vertical-align: top;
+    position: absolute;
+    top: -75px;
+    right: 95px;
+    width: 25px;
+    transform: rotate(30deg);
+}
+
+.course .pic img {
+    vertical-align: top;
+    width: 100%;
+    transform: scale(1);
+    transition: .3s;
+}
+
+.course img:hover {
+    transform: scale(1.07);
+    transition: .2s;
+}
+
+.card h3 {
+    padding: 5px 0;
+    border-bottom: 1px solid #aaa;
+}
+
+.course .card .tag {
+    background-color: #A07B67;
+    position: absolute;
+    top: 10px;
+    left: -10px;
+    padding: 9px 23px;
+    box-shadow: 0px 0px 4px #666;
+    color: #eee;
+    font-family: Gowun Batang, 'Times New Roman', Times, NotoSerifCJKtc-Regular, serif;
+}
+
+.course .date {
+    margin: 7px 0;
+}
+
+.course .date span:first-child {
+    padding: 5px;
+    border: 1px solid #aaa;
+    margin-right: 10px;
+}
+
+.course .cost {
+    display: inline-block;
+    margin: 7px 0;
+}
+
+.course .cost span:first-child {
+    padding: 5px;
+    border: 1px solid #aaa;
+    margin-right: 10px;
+}
+
+.course a {
+    text-decoration: none;
+    color: #333;
+    font-size: 21px;
+    line-height: 1.5;
+    transition: .3s;
+    font-family: Gowun Batang, 'Times New Roman', Times, NotoSerifCJKtc-Regular, serif;
+}
+
+.course a:hover {
+    color: #C48710;
+    transition: .2s;
+}
+
+/* --RWD----------------------------------------------- */
+
+@media screen and (max-width:768px) {
+
+    .course .title {
+        margin: 30px 0 0;
+    }
+
+    .course .wrap {
+        width: 95%;
+        margin: 0 auto 50px;
+    }
+
+    .course .card {
+        max-width: calc(95% / 3 - 10px);
+        margin: 25px auto;
+    }
+
+    .course .fruit img {
+        right: 20px;
+        top: -70px;
+    }
+
+}
+
+@media screen and (max-width:414px) {
+    .banner img {
+        margin: -10px 0 0;
+    }
+
+    .course .card {
+        max-width: 95%;
+        display: flex;
+        /* justify-content: space-between; */
+        margin: 15px auto;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .course .card .txt {
+        margin-left: 15px;
+    }
+
+    .course .card:last-child {
+        border-bottom: 0;
+    }
+
+    .course h3 {
+        padding: 0;
+        border-bottom: 0;
+    }
+
+    .course .pic {
+        width: 40%;
+    }
+
+    .course .txt {
+        margin: 0 0 20px;
+    }
+
+    .course a {
+        font-size: 18px;
+        color: #A07B67;
+    }
+
+    .course .detail span {
+        font-size: 14px;
+    }
+
+    .course .card .tag {
+        padding: 6px 10px;
+        font-size: 13px;
+    }
+
+    .course .fruit img {
+        display: none;
+    }
+>>>>>>> afa6190561892fa4cc0b60a78e7ccb068599df79:CSS/course.css
+>>>>>>> 98c79dd0aacf130bbae2c04cc06dcc74fc227e0b:CSS/course.css
 }
