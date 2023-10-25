@@ -261,9 +261,8 @@ a {
 .other .itemView{
     position:relative;
     width: 960px;
-    height:350px;
+    height:400px;
     margin: auto;
-    background-color: #bfbfef;
     overflow:hidden;
     /* transition:left 1s; */
 }
