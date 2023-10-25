@@ -40,7 +40,7 @@ li {
     color: #333;
 }
 
-a {
+a,span {
     font-size: 15px;
     line-height: 1.5;
     font-family: Gowun Batang, 'Times New Roman', Times, NotoSerifCJKtc-Regular, serif;
@@ -133,6 +133,7 @@ a {
     border-left: 0;
     border-bottom: 1px solid #333;
     outline: none;
+    padding: 0 20px;
 }
 
 .product .btn input:nth-child(3) {
@@ -261,7 +262,7 @@ a {
 .other .itemView{
     position:relative;
     width: 960px;
-    height:400px;
+    height:410px;
     margin: auto;
     overflow:hidden;
     /* transition:left 1s; */
