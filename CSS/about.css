@@ -46,7 +46,7 @@ body {
     font-size: 15px;
     color: #7F7F7F;
     text-align: center;
-    font-family: 'Times New Roman', NotoSerifCJKtc-Regular, Times, serif;
+    font-family:'Times New Roman', NotoSerifCJKtc-Regular, Times, serif;
     letter-spacing: 2px;
 }
 
@@ -291,7 +291,7 @@ body {
 }
 
 .service .wrap {
-    background: url(img/about/service.png);
+    background: url(/img/about/service.png);
     padding: 60px 0;
     background-size: cover;
 }
@@ -311,7 +311,7 @@ body {
     color: #eee;
 }
 
-.service h3 {
+.service .card>h3 {
     margin: 25px;
     font-size: 35px;
     color: #eee;
