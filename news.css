@@ -1,28 +1,3 @@
-@font-face {
-    font-family: NotoSerifCJKtc-Regular;
-    src: url(font/NotoSerifCJKtc-Regular.otf);
-}
-
-@font-face {
-    font-family: Jacques Francois;
-    src: url(font/JacquesFrancois-Regular.ttf);
-}
-
-p {
-    font-size: 15px;
-    line-height: 1.5;
-    font-family: Gowun Batang, 'Times New Roman', Times, NotoSerifCJKtc-Regular, serif;
-    color: #333
-}
-
-h2 {
-    font-size: 28px;
-    font-family: Jacques Francois, 'Times New Roman', Times, NotoSerifCJKtc-Regular, serif;
-    color: #333
-}
-
-/* ----------------------------------------------- */
-
 .news .wrap {
     max-width: 1200px;
     width: 100%;
