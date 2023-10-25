@@ -1,0 +1,208 @@
+@font-face {
+    font-family: NotoSerifCJKtc-Regular;
+    src: url(font/NotoSerifCJKtc-Regular.otf);
+}
+
+@font-face {
+    font-family: Jacques Francois;
+    src: url(font/JacquesFrancois-Regular.ttf);
+}
+
+p {
+    font-size: 15px;
+    line-height: 1.5;
+    font-family: Gowun Batang, 'Times New Roman', Times, NotoSerifCJKtc-Regular, serif;
+    color: #333
+}
+
+h2 {
+    font-size: 28px;
+    font-family: Jacques Francois, 'Times New Roman', Times, NotoSerifCJKtc-Regular, serif;
+    color: #333
+}
+
+/* ----------------------------------------------- */
+
+.news .wrap {
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.news .title {
+    max-width: 1200px;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #666;
+    margin: 30px 0 55px;
+    padding: 10px 0;
+}
+
+.news .card {
+    max-width: 370px;
+    width: 100%;
+    margin: 35px 15px;
+    position: relative;
+}
+
+.news img {
+    vertical-align: top;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.news .card .tag {
+    background-color: #A07B67;
+    position: absolute;
+    top: 10px;
+    left: -10px;
+    padding: 8px 12px;
+    box-shadow: 0px 0px 4px #666;
+    color: #eee;
+    font-family: 'Times New Roman', Times, NotoSerifCJKtc-Regular, serif;
+}
+
+.news .date {
+    font-size: 13px;
+    font-family: 'Times New Roman', Times, NotoSerifCJKtc-Regular, serif;
+    color: #aaa;
+}
+
+.news a {
+    text-decoration: none;
+    color: #333;
+    font-size: 15px;
+    line-height: 1.5;
+    transition: .3s;
+    font-family: 'Times New Roman', Times, NotoSerifCJKtc-Regular, serif;
+}
+
+.news .card:hover a {
+    color: #C48710;
+    transition: .2s;
+}
+
+/* ----------------------------------------------- */
+
+.page {
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.page .item {
+    margin: 65px 0 45px;
+}
+
+.page a {
+    text-decoration: none;
+    padding: 0 3px;
+    color: #333;
+    transition: .3s;
+    font-size: 15px;
+    font-family: Gowun Batang, 'Times New Roman', Times, NotoSerifCJKtc-Regular, serif;
+}
+
+.page a:hover {
+    color: #C48710;
+    border-bottom: 1px solid #C48710;
+    transition: .2s;
+}
+
+/* --------------------------- */
+
+.front-page .line {
+    border: 1px solid #333;
+    width: 25px;
+    display: inline-block;
+    border-radius: 3px;
+}
+
+.front-page .slash {
+    border: 1px solid #333;
+    width: 1px;
+    display: inline-block;
+    transform: rotate(135deg);
+    translate: 0 -1.5px;
+    transform-origin: bottom right;
+    border-radius: 3px;
+    transition: .3s;
+}
+
+.front-page {
+    display: inline-flex;
+    justify-content: end;
+    padding: 7px 0 0 0;
+    margin: 0 10px;
+}
+
+.front-page:hover a {
+    border: 1px solid #C48710;
+    transition: .2s;
+}
+
+/* --------------------------- */
+
+.back-page .line {
+    border: 1px solid #333;
+    width: 25px;
+    display: inline-block;
+    border-radius: 3px;
+}
+
+.back-page .slash {
+    border: 1px solid #333;
+    width: 1px;
+    display: inline-block;
+    transform: rotate(-135deg);
+    translate: 0 -1.5px;
+    transform-origin: bottom left;
+    border-radius: 3px;
+    transition: .3s;
+}
+
+.back-page {
+    display: inline-flex;
+    justify-content: end;
+    padding: 7px 0 0 0;
+    margin: 0 10px;
+}
+
+.back-page:hover a {
+    border: 1px solid #C48710;
+    transition: .2s;
+}
+
+/* --RWD----------------------------------------------- */
+
+@media screen and (max-width:768px) {
+
+    .news .title {
+        margin: 20px 0 10px;
+    }
+
+    .news .wrap {
+        width: 95%;
+    }
+
+    .news .card {
+        max-width: calc(95% / 3 - 10px);
+        margin: 20px auto;
+    }
+
+    .news .card:last-child {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width:414px) {
+    .news .card {
+        max-width: calc(95% / 2 - 15px);
+        margin: 20px auto;
+    }
+}

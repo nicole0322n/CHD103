@@ -1,0 +1,364 @@
+@font-face {
+    font-family: NotoSerifCJKtc-Regular;
+    src: url(font/NotoSerifCJKtc-Regular.otf);
+}
+
+@font-face {
+    font-family: Jacques Francois;
+    src: url(font/JacquesFrancois-Regular.ttf);
+}
+
+p {
+    font-size: 15px;
+    line-height: 1.5;
+    font-family: Jacques Francois, 'Times New Roman', Times, NotoSerifCJKtc-Regular, serif;
+    color: #333
+}
+
+h2 {
+    font-size: 28px;
+    font-family: Jacques Francois, 'Times New Roman', Times, NotoSerifCJKtc-Regular, serif;
+    color: #333
+}
+
+.main-menu li>a {
+    font-size: 15px;
+    line-height: 1.5;
+    font-family: Jacques Francois, 'Times New Roman', Times, NotoSerifCJKtc-Regular, serif;
+    color: #333
+}
+
+.main-menu .color>a {
+    font-size: 15px;
+    line-height: 1.5;
+    font-family: Jacques Francois, 'Times New Roman', Times, NotoSerifCJKtc-Regular, serif;
+    color: #333
+}
+
+/* ----------------------------------------------- */
+
+.product {
+    width: 100%;
+}
+
+.product .wrap {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product .title {
+    width: 100%;
+    max-width: 1200px;
+    text-align: center;
+    border-bottom: 1px solid #666;
+    margin: 30px 0 40px;
+    padding: 10px 0;
+}
+
+/* ----------------------------------------------- */
+
+.product nav {
+    width: 100%;
+    max-width: 960px;
+    margin: auto;
+    z-index: 1;
+}
+
+.main-menu {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.main-menu>li {
+    padding: 0 35px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+}
+
+.main-menu>li>a {
+    display: block;
+    padding: 5px 8px;
+    text-decoration: none;
+    transition: .3s;
+    color: #A07B67;
+    border: 1px solid #A07B67;
+}
+
+.main-menu .sub-menu {
+    display: none;
+    padding-top: 10px;
+    position: absolute;
+    flex-wrap: wrap;
+    justify-content: center;
+    top: 34px;
+}
+
+.main-menu .sub-menu img {
+    vertical-align: top;
+    display: inline-block;
+
+}
+
+.main-menu .sub-menu a {
+    display: inline-block;
+    padding: 6px;
+    text-decoration: none;
+    transition: .3s;
+    color: #333;
+}
+
+.main-menu .sub-menu .color {
+    display: flex;
+    align-items: center;
+}
+
+.main-menu>li:hover .sub-menu {
+    background-color: #eee9;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100px;
+}
+
+.main-menu>li>a:hover {
+    transition: .2s;
+    color: #C48710;
+    border: 1px solid #C48710;
+}
+
+.sub-menu a:hover {
+    transition: .2s;
+    color: #C48710;
+}
+
+/* ----------------------------------------------- */
+.product .item {
+    max-width: 960px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.product .card {
+    width: 285px;
+    margin: 15px 15px 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.product .pic {
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.product .pic img {
+    width: 100%;
+    vertical-align: top;
+    transform: scale(1);
+    transition: .7s;
+}
+
+.product .pic img:hover {
+    transition: .7s;
+    transform: scale(1.1);
+}
+
+.product .name {
+    font-size: 15px;
+    line-height: 1.5;
+    font-family: Gowun Batang, 'Times New Roman', Times, NotoSerifCJKtc-Regular, serif;
+    color: #333;
+}
+
+.product .name a {
+    text-decoration: none;
+    color: #333;
+    transition: .3s;
+    font-size: Gowun Batang, 'Times New Roman', Times, NotoSerifCJKtc-Regular, serif;
+}
+
+.product span {
+    display: block;
+}
+
+.product .buy {
+    width: 35px;
+    height: 35px;
+    border-radius: 100px;
+    border: 1.5px solid #d9d9d9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product .buy i {
+    font-size: 17px;
+}
+
+.product .buy .fa-cart-shopping {
+    display: none;
+    width: 12px;
+    margin: 4px 9px 0 0;
+}
+
+.product .buy:hover .fa-plus {
+    display: none;
+}
+
+.product .buy:hover .fa-cart-shopping {
+    display: inline-block;
+}
+
+.product .buy:hover {
+    background-color: #eee;
+}
+
+
+.product .name a:hover {
+    color: #C48710;
+    transition: .2s;
+}
+
+
+.product .buy img:nth-child(1):hover {
+    transition: .2s;
+    opacity: 0;
+}
+
+/* ----------------------------------------------- */
+
+.page {
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.page .item {
+    margin: 65px 0 45px;
+}
+
+.page a {
+    text-decoration: none;
+    padding: 0 3px;
+    color: #333;
+    transition: .3s;
+}
+
+.page a:hover {
+    color: #C48710;
+    border-bottom: 1px solid #C48710;
+    transition: .2s;
+}
+
+/* --------------------------- */
+
+
+.front-page .line {
+    border: 1px solid #333;
+    width: 25px;
+    display: inline-block;
+    border-radius: 3px;
+}
+
+.front-page .slash {
+    border: 1px solid #333;
+    width: 1px;
+    display: inline-block;
+    transform: rotate(135deg);
+    translate: 0 -1.5px;
+    transform-origin: bottom right;
+    border-radius: 3px;
+    transition: .3s;
+}
+
+.front-page {
+    display: inline-flex;
+    justify-content: end;
+    padding: 7px 0 0 0;
+    margin: 0 10px;
+}
+
+.front-page:hover a {
+    border: 1px solid #C48710;
+    transition: .2s;
+}
+
+/* --------------------------- */
+
+.back-page .line {
+    border: 1px solid #333;
+    width: 25px;
+    display: inline-block;
+    border-radius: 3px;
+}
+
+.back-page .slash {
+    border: 1px solid #333;
+    width: 1px;
+    display: inline-block;
+    transform: rotate(-135deg);
+    translate: 0 -1.5px;
+    transform-origin: bottom left;
+    border-radius: 3px;
+    transition: .3s;
+}
+
+.back-page {
+    display: inline-flex;
+    justify-content: end;
+    padding: 7px 0 0 0;
+    margin: 0 10px;
+}
+
+.back-page:hover a {
+    border: 1px solid #C48710;
+    transition: .2s;
+}
+
+@media screen and (max-width:768px) {
+    .product .wrap {
+        width: 90%;
+    }
+
+    .product .title {
+        margin: 20px 0 55px;
+    }
+
+}
+
+@media screen and (max-width:414px) {
+    .product .title {
+        margin: 20px 0 35px;
+    }
+
+    .product .card {
+        width: 150px;
+        margin: 15px 8px 15px;
+    }
+
+    .main-menu>li {
+        padding: 0 15px;
+    }
+
+    .main-menu {
+        margin-bottom: 15px;
+    }
+
+    .product .buy {
+        display: none;
+    }
+
+}
