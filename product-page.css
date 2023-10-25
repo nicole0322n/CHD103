@@ -258,12 +258,24 @@ a {
     transform: rotate(-15deg);
 }
 
+.other .itemView{
+    position:relative;
+    width: 960px;
+    height:330px;
+    margin: auto;
+    background-color: #bfbfef;
+    overflow:hidden;
+    /* transition:left 1s; */
+}
+
 .other .wrap {
-    max-width: 960px;
-    width: 100%;
+    position:absolute;
+    width: 960px;
+    /* max-width: 960px;
+    width: 100%; */
     margin: auto;
     display: flex;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .other .card {
@@ -317,6 +329,10 @@ a {
     justify-content: space-between;
 }
 
+.item button{
+    background-color: #fff;
+    border: none;
+}
 
 .front-page .line {
     border: 1px solid #666;
@@ -338,7 +354,7 @@ a {
 }
 
 
-.front-page:hover a {
+.front-page:hover span {
     border: 1px solid #C48710;
     transition: .2s;
 }
@@ -365,7 +381,7 @@ a {
 }
 
 
-.back-page:hover a {
+.back-page:hover span {
     border: 1px solid #C48710;
     transition: .2s;
 }
