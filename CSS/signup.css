@@ -1,3 +1,4 @@
+<<<<<<< HEAD:signup.css
 @font-face {
     font-family: NotoSerifCJKtc-Regular;
     src: url(font/NotoSerifCJKtc-Regular.otf);
@@ -288,4 +289,255 @@ span {
         width: 100%;
         text-align: center;
     }
+=======
+label {
+    font-size: 15px;
+    line-height: 1.5;
+    font-family: 'Times New Roman', Times, NotoSerifCJKtc-Regular, serif;
+    color: #333;
+}
+a {
+    font-size: 15px;
+    line-height: 1.5;
+    font-family: 'Times New Roman', Times, NotoSerifCJKtc-Regular, serif;
+    color: #333;
+    text-decoration: none;
+}
+
+span {
+    font-size: 15px;
+    line-height: 1.5;
+    font-family: 'Times New Roman', Times, NotoSerifCJKtc-Regular, serif;
+    color: #333;
+    text-decoration: none;
+}
+
+/* ----------------------------------------------- */
+
+.login {
+    margin-bottom: 70px;
+}
+
+.login .wrap {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.login .title {
+    width: 100%;
+    max-width: 1200px;
+    text-align: center;
+    border-bottom: 1px solid #666;
+    margin: 30px 0 55px;
+    padding: 10px 0;
+}
+
+.login .card {
+    width: 100%;
+    max-width: 960px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.login .pic {
+    width: 40%;
+    position: relative;
+}
+
+.login .pic .leaf img {
+    position: absolute;
+    bottom: 150px;
+    left: -48px;
+    width: 40px;
+    transform: rotate(-20deg);
+}
+
+.login .pic img {
+    vertical-align: top;
+    width: 100%;
+}
+
+.login .item {
+    width: 30%;
+    margin: auto 90px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.login .form {
+    margin: 10px;
+}
+
+.login .info label {
+    margin-bottom: 5px;
+    display: block;
+}
+
+.login .info input {
+    margin-bottom: 25px;
+    width: 294px;
+    height: 25px;
+    border: 0px;
+    background-color: #eee;
+    border-radius: 3px;
+    padding-left: 10px;
+    font-family: 'Times New Roman', Times, NotoSerifCJKtc-Regular, serif;
+}
+
+.login .info input:focus {
+    outline: none;
+}
+
+.login .eye {
+    position: absolute;
+    top: -30px;
+    right: 8px;
+    font-size: 13px;
+    padding: 5px;
+}
+
+.login .forget {
+    display: flex;
+    justify-content: end;
+    margin-top: -20px;
+    position: relative;
+}
+
+.login .forget a {
+    font-size: 13px;
+    color: #aaa;
+    transition: .2s;
+}
+
+.login .forget a:hover {
+    color: #C48710;
+    transition: .2s;
+}
+
+.login .updata input {
+    width: 70px;
+    height: 30px;
+    color: #eee;
+    font-size: 15px;
+    background-color: #A07B67;
+    border: 0px;
+    margin: 15px 0;
+    transition: .2s;
+    font-family: Jacques Francois, 'Times New Roman', Times, NotoSerifCJKtc-Regular, serif;
+}
+
+.login .updata input:hover {
+    background-color: #C48710;
+    transition: .2s;
+}
+
+.login .line {
+    width: 100%;
+    max-width: 300px;
+}
+
+.login .or {
+    display: flex;
+    margin: 25px auto 10px;
+    align-items: center;
+}
+
+.login .or::before,
+.login .or::after {
+    content: "";
+    background: #cccccc;
+    display: inline-block;
+    flex: 1;
+    margin: 3px 10px 3px 0px;
+    height: 1px;
+}
+
+
+.login .or::after {
+    margin: 3px 0 3px 10px;
+}
+
+.login .media {
+    width: 100%;
+    margin: 10px auto 75px;
+    display: flex;
+    justify-content: center;
+}
+
+.login .media img {
+    vertical-align: top;
+    padding: 0 10px;
+}
+
+
+.login .signup span {
+    padding-right: 10px;
+}
+
+.login .signup a {
+    border-bottom: 1px solid #666;
+    padding: 3px 0;
+    transition: .2s;
+}
+
+.login .signup a:hover {
+    color: #C48710;
+    border-bottom: 1px solid #C48710;
+    transition: .2s;
+}
+
+.login .signup {
+    position: relative;
+}
+
+.login .signup .fruit img {
+    position: absolute;
+    top: 0px;
+    right: -40px;
+    width: 25px;
+    transform: rotate(30deg);
+}
+
+/* ----RWD----------------------------------------- */
+
+@media screen and (max-width:768px) {
+    .login .wrap {
+        width: 90%;
+    }
+
+    .login .title {
+        margin: 20px 0 55px;
+    }
+
+    .login .pic {
+        margin: 10px;
+    }
+
+    .login .pic .leaf img {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width:414px) {
+    .login .pic {
+        display: none;
+    }
+
+    .login .item {
+        width: 100%;
+        margin: auto;
+    }
+
+    .login .updata {
+        width: 100%;
+        text-align: center;
+    }
+>>>>>>> afa6190561892fa4cc0b60a78e7ccb068599df79:CSS/signup.css
 }

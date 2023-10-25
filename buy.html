@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 
@@ -257,4 +258,265 @@
     </div>
 </body>
 
+=======
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>購買資訊-Preserve乾燥花</title>
+    <link rel="stylesheet" href="/CSS/reset.css">
+    <link rel="stylesheet" href="/CSS/header and footer.css">
+    <link rel="stylesheet" href="/CSS/buy.css">
+    <script src="/JS/buy.js"></script>
+    <script src="https://kit.fontawesome.com/2d432a1e75.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="nav_bg" id="nav_bg"></div>
+    <!-- <input type="checkbox" name="" id="menu-switch"> -->
+
+    <div class="header">
+        <nav class="logo">
+            <a href="index.html"><img src="/img/share/logo.svg" alt="logo"></a>
+        </nav>
+        <nav class="title">
+            <a class="main-nav" href="about.html">關於我們</a>
+            <a class="main-nav" href="news.html">最新消息</a>
+            <a class="main-nav" href="product.html">產品列表</a>
+            <a class="main-nav" href="course.html">花藝教室</a>
+            <a class="main-nav" href="course.html">花藝教室</a>
+            <a class="main-nav" href="space.html">空間佈置</a>
+            <a class="main-nav" href="contact.html">聯絡我們</a>
+        </nav>
+        <nav class="icon">
+            <a class="sign" href="signup.html"><i class="fa-solid fa-user" style="color: #9f9f9f;"></i></a>
+            <a href="buy.html"><i class="fa-solid fa-cart-shopping" style="color: #9f9f9f;"></i></a>
+        </nav>
+
+
+        <div class="hb">
+            <!-- <label for="menu-switch"> -->
+            <span></span>
+            <span></span>
+            <span></span>
+            <!-- </label> -->
+        </div>
+    </div>
+    <!-- ----------------------------------------------------------------- -->
+
+    <div class="buy">
+        <div class="title">
+            <h2>購物車</h2>
+        </div>
+    </div>
+
+    <!-- ----------------------------------------------------------------- -->
+
+    <div class="process">
+
+        <div class="card">
+            <div class="txt">
+                <p>確認訂單</p>
+            </div>
+            <div class="cirNow">
+                <span>1</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="txt">
+                <p>資料填寫</p>
+            </div>
+            <div class="cir">
+                <span>2</span>
+            </div>
+        </div>
+        <div class="card">
+            <div class="txt">
+                <p>付款/配送方式</p>
+            </div>
+            <div class="cir">
+                <span>3</span>
+            </div>
+        </div>
+        <div class="card">
+            <div class="txt">
+                <p>結帳完成</p>
+            </div>
+            <div class="cir">
+                <span>4</span>
+            </div>
+        </div>
+        <div class="line">
+            <i></i>
+        </div>
+    </div>
+
+    <!-- ----------------------------------------------------------------- -->
+    <div class="table-wrapper">
+        <table>
+            <tr>
+                <th>選擇</th>
+                <th>商品圖片</th>
+                <th>商品名稱</th>
+                <th>數量</th>
+                <th>金額</th>
+                <th>刪除</th>
+            </tr>
+            <tr class="line">
+                <td><input type="checkbox"></td>
+                <td><img src="/img/product/秋色.jpg" alt=""></td>
+                <td>中型乾燥花束【秋色】</td>
+                <td class="btn">
+                    <input type="button" value="–" onclick="btnMinus(1)">
+                    <input type="text" size="1" value="1" id="num1">
+                    <input type="button" value="+" onclick="btnPlus(1)">
+                </td>
+                <td>NT $<span id="total1">650</span></td>
+                <td><button><i class="fa-solid fa-trash-can" style="color: #aaa;"></i></button></td>
+            </tr>
+            <tr class="line">
+                <td><input type="checkbox"></td>
+                <td><img src="/img/product/白戀.jpg" alt=""></td>
+                <td>大型乾燥花束【白戀】</td>
+                <td class="btn">
+                    <input type="button" value="–" onclick="btnMinus(2)">
+                    <input type="text" size="1" value="1" id="num2">
+                    <input type="button" value="+" onclick="btnPlus(2)">
+                </td>
+                <td>NT $<span id="total2">750</span></td>
+                <td><button><i class="fa-solid fa-trash-can" style="color: #aaa;"></i></button></td>
+            </tr>
+            <tr class="line">
+                <td></td>
+                <td></td>
+                <td>總金額</td>
+                <td class="allNum" id="allNum" value="0">0</td>
+                <td>NT $<span class="allPrice" id="allPrice">0</span></td>
+            </tr>
+        </table>
+    </div>
+    <!-- ----------------------------------------------------------------- -->
+    <div class="check">
+        <button>取消訂單</button>
+        <button>確認下單</button>
+    </div>
+    <!-- ----------------------------------------------------------------- -->
+
+    <div class="rule">
+        <div class="item">
+            <div class="read">
+                <h3>購買須知</h3>
+                <p>歡迎使用Preserve乾燥花官方網站，請您於使用相關服務前先詳閱以下說明。
+                    若您於本網站訂購、付款、消費或其他消費行為，則視為您已知悉，並同意本約定條款的所有約定。</p>
+            </div>
+            <div class="shipping-free">
+                <h3>單筆消費滿<span>1000</span><span>元</span>免運</h3>
+            </div>
+            <div class="pay">
+                <h3>付款方式</h3>
+                <ul>
+                    <li><span>1</span>銀行轉帳 (付款後須上傳訂單明細，以利後續出貨)</li>
+                    <li><span>2</span>信用卡付款 (支援VISA、JCB、MasterCard、銀聯卡)</li>
+                    <li><span>3</span>LINE PAY</li>
+                    <li><span>4</span>Apple Pay</li>
+                    <li><span>5</span>超商、宅配取貨付款</li>
+                </ul>
+            </div>
+            <div class="shipping">
+                <h3>運送方式</h3>
+                <div class="chose">
+                    <div class="card">
+                        <span>黑貓宅配</span>
+                        <i class="fa-solid fa-truck-fast" style="color: #a07b67;"></i>
+                        <ul>
+                            <li>通常隔日送達</li>
+                            <li>運費: 120元</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <span>超商</span>
+                        <i class="fa-solid fa-store" style="color: #a07b67;"></i>
+                        <ul>
+                            <li>通常3-7天送達(不含假日)</li>
+                            <li>全家運費: 65元</li>
+                            <li>7-11運費: 65元</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <span>新竹物流</span>
+                        <i class="fa-solid fa-truck" style="color: #a07b67;"></i>
+                        <ul>
+                            <li>通常3-5天送達</li>
+                            <li>運費: 90元</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ----------------------------------------------------------------- -->
+    <div class="footer">
+        <div class="wrap">
+            <div class="item">
+                <h3>認識我們</h3>
+                <ul>
+                    <li><a href="#">品牌故事</a></li>
+                    <li><a href="#">服務項目</a></li>
+                    <li><a href="#">會員招募</a></li>
+                    <li><a href="#">廠商合作</a></li>
+                </ul>
+            </div>
+            <div class="item">
+                <h3>產品資訊</h3>
+                <ul>
+                    <li><a href="#">婚禮花束</a></li>
+                    <li><a href="#">畢業花束</a></li>
+                    <li><a href="#">告白花束</a></li>
+                    <li><a href="#">空間佈置</a></li>
+                </ul>
+            </div>
+            <div class="item">
+                <h3>顧客服務</h3>
+                <ul>
+                    <li><a href="#">會員登入</a></li>
+                    <li><a href="#">購物須知</a></li>
+                    <li><a href="#">包裹查詢</a></li>
+                    <li><a href="#">常見問題</a></li>
+                    <li><a href="#">如何保養</a></li>
+                </ul>
+            </div>
+            <div class="items">
+                <div class="contact">
+                    <h3>聯絡我們</h3>
+                    <ul>
+                        <li>Preserve乾燥花</li>
+                        <li>Tel: 01-234-5678</li>
+                        <li>Email: preserve_info@mail.com</li>
+                        <div class="icon">
+                            <span><a href="#"><img src="/img/share/line.png" alt=""></a></span>
+                            <span><a href="#"><img src="/img/share/fb.png" alt=""></a></span>
+                            <span><a href="#"><img src="/img/share/ig.png" alt=""></a></span>
+                            <span><img src="/img/share/search.png"></span>
+                        </div>
+                    </ul>
+                </div>
+                <div class="map">
+                    <h3>門市資訊</h3>
+                    <ul>
+                        <li>Preserve乾燥花 桃花門市</li>
+                        <li>地址: 桃花市盆栽區花花街404號</li>
+                        <li>營業時間: 12:00-19:00 (週日‧週一公休)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <p>本網站為緯育TibaMe【CHD10323】前端工程師專業技術養成班學員作品,僅供學習、展示之用途。</p>
+    </div>
+</body>
+
+>>>>>>> afa6190561892fa4cc0b60a78e7ccb068599df79
 </html>
