@@ -7,14 +7,21 @@
 // });
 
 
-let eye = document.querySelector(".fa-eye-slash");
-let password = document.querySelector("#password");
-eye.addEventListener('mousedown', function () {
-    password.type = "text";
-    eye.innerHTML = `<i class="fa-solid rwd fa-eye" style="color: #9f9f9f;"></i>`;
-});
+window.addEventListener("DOMContentLoaded", (evenr) => {
+    let eyeIcon = document.getElementById('eyeIcon');
+    let password = document.getElementById('password');
+    if (eyeIcon) {
 
-eye.addEventListener('mouseup', function () {
-    password.type = "password";
-    eye.innerHTML = `<i class="fa-solid fa-eye-slash" style="color: #9f9f9f;"></i>`;
+        eyeIcon.innerHTML = `<i class="fa-solid fa-eye-slash" style="color: #9f9f9f;"></i>`;
+
+        eyeIcon.addEventListener('mousedown', function () {
+            password.type = "text";
+            eyeIcon.innerHTML = `<i class="fa-solid rwd fa-eye" style="color: #9f9f9f;"></i>`;
+        });
+
+        eyeIcon.addEventListener('mouseup', function () {
+            password.type = "password";
+            eyeIcon.innerHTML = `<i class="fa-solid fa-eye-slash" style="color: #9f9f9f;"></i>`;
+        });
+    }
 });

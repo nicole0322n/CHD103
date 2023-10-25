@@ -36,51 +36,107 @@ window.addEventListener("load", init, false);
 
 
 // 圖片輪播
-let wrap = document.querySelector('.wrap');
-let cards = document.querySelectorAll('card')
-let frontPage = document.querySelector('.front-page');
-let backPage = document.querySelector('.back-page');
-let chang = document.querySelector('.chang');
-let currentIndex = 0;
 
-// 滑鼠點擊滑動圖片
-let isDragStart = false;
 
-let dragStart = () => {
-    isDragStart = true;
-}
+window.addEventListener("load", function () {
+    let wrap = document.querySelector('.itemView >.wrap');
+    let cards = document.querySelectorAll('.itemView > .card')
+    let frontPage = document.querySelector('.front-page');
+    let backPage = document.querySelector('.back-page');
+    let chang = document.querySelector('.chang');
+    let currentIndex = 0;
 
-let dragging = () => {
-    if (!isDragStart) return;
-    wrap.scrollLeft = e.pageX;
-}
+    frontPage.onclick = function () {
 
-wrap.addEventListener("mousedown", dragStart);
-wrap.addEventListener("mousemove", dragging);
-// 滑鼠點擊滑動圖片 結束
+        currentIndex++;
+        let newPosition = -currentIndex * 320;
+        wrap.style.transform = `translateX(${newPosition}px)`;
 
-// 點擊箭頭換圖片
-frontPage.addEventListener('click', function () {
-    cards.forEach(card => {
-        cards.style.transform = `translateX(-320px)`;
-    });
+        if (currentIndex === 2) {
+            frontPage.disabled = true;
+        }
+        backPage.disabled = false;
+    };
+
+    backPage.onclick = function () {
+        currentIndex--;
+        let newPosition = -currentIndex * 320;
+        wrap.style.transform = `translateX(${newPosition}px)`;
+
+        // 如果 currentIndex = 0 的時候，換頁隱藏
+        if (currentIndex === 0) {//cards.length - 3) {
+            backPage.disabled = true;
+        }
+        frontPage.disabled = false;
+        console.log(cards.length)
+    };
+
+
 });
-backPage.addEventListener('click', function () {
-    cards.forEach(card => {
-        cards.style.transform = `translateX(320px)`;
-    });
-});
-// 點擊箭頭換圖片 結束
 
-// 下方圈圈生成
-let dots = []
-let str = "<ul>";
-dots.map(function (dot) {
-    str += `<li>${dot}</li>`;
-})
-str += "</ul>";
-document.getElementById("chang").innerHTML = str;
-// 下方圈圈生成 結束
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// // 滑鼠點擊滑動圖片
+// let isDragStart = false;
+
+// let dragStart = () => {
+//     isDragStart = true;
+// }
+
+// let dragging = () => {
+//     if (!isDragStart) return;
+//     wrap.scrollLeft = e.pageX;
+// }
+
+// wrap.addEventListener("mousedown", dragStart);
+// wrap.addEventListener("mousemove", dragging);
+// // 滑鼠點擊滑動圖片 結束
+
+// // 點擊箭頭換圖片
+// frontPage.addEventListener('click', function () {
+//     wrap.forEach(card => {
+//         cards.style.transform = `translateX(-320px)`;
+//     });
+// });
+// backPage.addEventListener('click', function () {
+//     cards.forEach(card => {
+//         cards.style.transform = `translateX(320px)`;
+//     });
+// });
+// // 點擊箭頭換圖片 結束
+
+// // 下方圈圈生成
+// let dots = []
+// let str = "<ul>";
+// dots.map(function (dot) {
+//     str += `<li>${dot}</li>`;
+// })
+// str += "</ul>";
+// document.getElementById("chang").innerHTML = str;
+// // 下方圈圈生成 結束
+
+
+// ------------------------
+
 
 // chatGPT
 // frontPage.addEventListener('click', () => {
