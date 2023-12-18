@@ -37,6 +37,42 @@ body {
     overflow-x: hidden;
 }
 
+.loading{
+    background-color: #A07B67;
+    color: #eee;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    transition: opacity 1s, visibility 1s;
+}
+
+.loading_hidden{
+    opacity: 0;
+    visibility: hidden;;
+}
+
+.loading::before{
+    content: '';
+    width: 75px;
+    height: 75px;
+    border: 10px solid #dddddd;
+    border-top: 10px solid #C48710;
+    border-radius: 50%;
+    animation: load 1s ease infinite;
+}
+
+@keyframes load {
+    from{
+        transform: rotate(0turn);
+    }
+    to{
+        transform: rotate(1turn);
+    }
+}
 
 /* -------------------------------------------------------------- */
 

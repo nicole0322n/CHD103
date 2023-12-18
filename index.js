@@ -44,6 +44,16 @@ $(document).ready(function () {
     }
 });
 
+// loading畫面
+window.addEventListener("load",()=>{
+    const loader = document.querySelector(".loading");
+    setTimeout(function(){
+        if(loader){
+            loader.classList.add("loading_hidden");
+        }
+    },1000);
+})
+
 // // 產品圖輪播
 
 // let picWidth = $('#pic').width()
